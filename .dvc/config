@@ -1,0 +1,4 @@
+[core]
+    autostage = true
+['remote "dagshub"']
+    url = https://dagshub.com/darwald2024/FYDP.dvc
