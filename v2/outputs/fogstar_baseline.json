@@ -1,0 +1,456 @@
+{
+  "dataset": "FoG-STAR Zenodo 10.5281/zenodo.17838806",
+  "note": "Subject split is seed 42, approximately 16/6 subjects, not the unpublished Paper4Stu IDs. Detection labels the observed 2-second window. Forecast labels the following 2 seconds. EER accuracy is reported only to show the effect of tuning the threshold on test labels.",
+  "sample_fog_rate": 0.19550675172554227,
+  "n_subjects": 22,
+  "tasks": {
+    "detection": {
+      "ankles_wrist": {
+        "C": 0.01,
+        "grouped_cv_mean_auprc_on_train_subjects": 0.3870955166786636,
+        "test": {
+          "n_windows": 3147,
+          "n_subjects": 6,
+          "n_positive": 1011,
+          "positive_rate_and_random_auprc_baseline": 0.32125834127740704,
+          "auprc_average_precision": 0.7684233980631958,
+          "auroc": 0.832892489729085,
+          "threshold_for_classification_metrics": 0.5,
+          "accuracy": 0.7893231649189705,
+          "balanced_accuracy": 0.7619715433601173,
+          "macro_f1": 0.760121890019608,
+          "positive_precision": 0.6676300578034682,
+          "positive_recall_sensitivity": 0.685459940652819,
+          "positive_f1": 0.6764275256222547,
+          "specificity": 0.8384831460674157,
+          "confusion_matrix_tn_fp_fn_tp": [
+            1791,
+            345,
+            318,
+            693
+          ],
+          "nll": 0.4646774215486921,
+          "brier_score": 0.1484727620538629,
+          "brier_skill_score_vs_prevalence_baseline": 0.3190928890206348,
+          "ece_positive_probability_10_fixed_bins": 0.07914870323064023,
+          "ece_top_label_10_fixed_bins": 0.024304352518855286,
+          "risk_coverage": {
+            "aurc_trapezoid_lower_is_better": 0.11089212405961171,
+            "error_rate_at_coverage": {
+              "50_pct": 0.10419313850063533,
+              "80_pct": 0.15369340746624305,
+              "90_pct": 0.18355100600070595
+            },
+            "confidence_definition": "2 * abs(P(FOG) - 0.5); retain highest confidence first"
+          },
+          "subject_macro_auprc": 0.6268349312488297,
+          "subjects_with_both_classes_for_macro_auprc": 4,
+          "per_subject": [
+            {
+              "subject": "1",
+              "n_windows": 698,
+              "positive_rate": 0.5071633237822349,
+              "auprc": 0.8840367726819146
+            },
+            {
+              "subject": "14",
+              "n_windows": 300,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "16",
+              "n_windows": 287,
+              "positive_rate": 0.010452961672473868,
+              "auprc": 0.08446969696969697
+            },
+            {
+              "subject": "2",
+              "n_windows": 1127,
+              "positive_rate": 0.5368234250221828,
+              "auprc": 0.8143267961583638
+            },
+            {
+              "subject": "6",
+              "n_windows": 255,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "9",
+              "n_windows": 480,
+              "positive_rate": 0.10208333333333333,
+              "auprc": 0.7245064591853433
+            }
+          ]
+        },
+        "test_eer_threshold_uses_test_labels_not_for_claims": 0.3882869780063629,
+        "n_windows": 9479,
+        "positive_rate": 0.20666736997573584,
+        "train_subjects": [
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          12,
+          15,
+          17,
+          20,
+          21
+        ],
+        "val_subjects_unused_in_final_fit": [
+          11,
+          13,
+          18,
+          19,
+          22
+        ],
+        "test_subjects": [
+          1,
+          2,
+          6,
+          9,
+          14,
+          16
+        ]
+      },
+      "all_four_imus": {
+        "C": 0.01,
+        "grouped_cv_mean_auprc_on_train_subjects": 0.32695510854752385,
+        "test": {
+          "n_windows": 3147,
+          "n_subjects": 6,
+          "n_positive": 1011,
+          "positive_rate_and_random_auprc_baseline": 0.32125834127740704,
+          "auprc_average_precision": 0.7515143748890644,
+          "auroc": 0.8505572596568829,
+          "threshold_for_classification_metrics": 0.5,
+          "accuracy": 0.7648554178582777,
+          "balanced_accuracy": 0.7413424243434579,
+          "macro_f1": 0.7359638309972598,
+          "positive_precision": 0.6237442922374429,
+          "positive_recall_sensitivity": 0.675568743818002,
+          "positive_f1": 0.6486229819563153,
+          "specificity": 0.8071161048689138,
+          "confusion_matrix_tn_fp_fn_tp": [
+            1724,
+            412,
+            328,
+            683
+          ],
+          "nll": 0.4505340938352002,
+          "brier_score": 0.14952722756837203,
+          "brier_skill_score_vs_prevalence_baseline": 0.31425703187633713,
+          "ece_positive_probability_10_fixed_bins": 0.0548701104468767,
+          "ece_top_label_10_fixed_bins": 0.052835072385898414,
+          "risk_coverage": {
+            "aurc_trapezoid_lower_is_better": 0.08917370724250528,
+            "error_rate_at_coverage": {
+              "50_pct": 0.0698856416772554,
+              "80_pct": 0.16560762509928514,
+              "90_pct": 0.20084715848923404
+            },
+            "confidence_definition": "2 * abs(P(FOG) - 0.5); retain highest confidence first"
+          },
+          "subject_macro_auprc": 0.6647471829790449,
+          "subjects_with_both_classes_for_macro_auprc": 4,
+          "per_subject": [
+            {
+              "subject": "1",
+              "n_windows": 698,
+              "positive_rate": 0.5071633237822349,
+              "auprc": 0.8915785281997353
+            },
+            {
+              "subject": "14",
+              "n_windows": 300,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "16",
+              "n_windows": 287,
+              "positive_rate": 0.010452961672473868,
+              "auprc": 0.24831649831649832
+            },
+            {
+              "subject": "2",
+              "n_windows": 1127,
+              "positive_rate": 0.5368234250221828,
+              "auprc": 0.7906579026247961
+            },
+            {
+              "subject": "6",
+              "n_windows": 255,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "9",
+              "n_windows": 480,
+              "positive_rate": 0.10208333333333333,
+              "auprc": 0.7284358027751502
+            }
+          ]
+        },
+        "test_eer_threshold_uses_test_labels_not_for_claims": 0.38328441977500916,
+        "n_windows": 8988,
+        "positive_rate": 0.1968179795282599,
+        "train_subjects": [
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          12,
+          15,
+          17,
+          20,
+          21
+        ],
+        "val_subjects_unused_in_final_fit": [
+          11,
+          13,
+          18,
+          19,
+          22
+        ],
+        "test_subjects": [
+          1,
+          2,
+          6,
+          9,
+          14,
+          16
+        ]
+      }
+    },
+    "forecast_2s": {
+      "ankles_wrist": {
+        "C": 0.01,
+        "grouped_cv_mean_auprc_on_train_subjects": 0.2842074689671251,
+        "test": {
+          "n_windows": 3047,
+          "n_subjects": 6,
+          "n_positive": 1007,
+          "positive_rate_and_random_auprc_baseline": 0.3304890055792583,
+          "auprc_average_precision": 0.6247198915462061,
+          "auroc": 0.7441692466460268,
+          "threshold_for_classification_metrics": 0.5,
+          "accuracy": 0.679028552674762,
+          "balanced_accuracy": 0.6780777206612536,
+          "macro_f1": 0.6606551843824902,
+          "positive_precision": 0.5108940646130729,
+          "positive_recall_sensitivity": 0.6752730883813307,
+          "positive_f1": 0.58169375534645,
+          "specificity": 0.6808823529411765,
+          "confusion_matrix_tn_fp_fn_tp": [
+            1389,
+            651,
+            327,
+            680
+          ],
+          "nll": 0.5942328384035858,
+          "brier_score": 0.20166978032636532,
+          "brier_skill_score_vs_prevalence_baseline": 0.08856417356248236,
+          "ece_positive_probability_10_fixed_bins": 0.1350706064172546,
+          "ece_top_label_10_fixed_bins": 0.035394637956714034,
+          "risk_coverage": {
+            "aurc_trapezoid_lower_is_better": 0.21092516189417038,
+            "error_rate_at_coverage": {
+              "50_pct": 0.20144356955380577,
+              "80_pct": 0.2756357670221493,
+              "90_pct": 0.2993073277433467
+            },
+            "confidence_definition": "2 * abs(P(FOG) - 0.5); retain highest confidence first"
+          },
+          "subject_macro_auprc": 0.4731273430960745,
+          "subjects_with_both_classes_for_macro_auprc": 4,
+          "per_subject": [
+            {
+              "subject": "1",
+              "n_windows": 678,
+              "positive_rate": 0.5162241887905604,
+              "auprc": 0.7853166761518985
+            },
+            {
+              "subject": "14",
+              "n_windows": 284,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "16",
+              "n_windows": 271,
+              "positive_rate": 0.01107011070110701,
+              "auprc": 0.04732142857142857
+            },
+            {
+              "subject": "2",
+              "n_windows": 1111,
+              "positive_rate": 0.5445544554455446,
+              "auprc": 0.7426674727360918
+            },
+            {
+              "subject": "6",
+              "n_windows": 243,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "9",
+              "n_windows": 460,
+              "positive_rate": 0.10652173913043478,
+              "auprc": 0.3172037949248791
+            }
+          ]
+        },
+        "test_eer_threshold_uses_test_labels_not_for_claims": 0.49462029337882996,
+        "n_windows": 9123,
+        "positive_rate": 0.21407431765866491,
+        "train_subjects": [
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          12,
+          15,
+          17,
+          20,
+          21
+        ],
+        "val_subjects_unused_in_final_fit": [
+          11,
+          13,
+          18,
+          19,
+          22
+        ],
+        "test_subjects": [
+          1,
+          2,
+          6,
+          9,
+          14,
+          16
+        ]
+      },
+      "all_four_imus": {
+        "C": 0.01,
+        "grouped_cv_mean_auprc_on_train_subjects": 0.27138013182404724,
+        "test": {
+          "n_windows": 3047,
+          "n_subjects": 6,
+          "n_positive": 1007,
+          "positive_rate_and_random_auprc_baseline": 0.3304890055792583,
+          "auprc_average_precision": 0.6032329019583412,
+          "auroc": 0.7770664174309247,
+          "threshold_for_classification_metrics": 0.5,
+          "accuracy": 0.710206760748277,
+          "balanced_accuracy": 0.6812479311486264,
+          "macro_f1": 0.6779737862022022,
+          "positive_precision": 0.5576208178438662,
+          "positive_recall_sensitivity": 0.5958291956305859,
+          "positive_f1": 0.5760921747479597,
+          "specificity": 0.7666666666666667,
+          "confusion_matrix_tn_fp_fn_tp": [
+            1564,
+            476,
+            407,
+            600
+          ],
+          "nll": 0.5319184582645422,
+          "brier_score": 0.1819134894023465,
+          "brier_skill_score_vs_prevalence_baseline": 0.17785167770183719,
+          "ece_positive_probability_10_fixed_bins": 0.057181630671954024,
+          "ece_top_label_10_fixed_bins": 0.042962631853958724,
+          "risk_coverage": {
+            "aurc_trapezoid_lower_is_better": 0.14417409236585033,
+            "error_rate_at_coverage": {
+              "50_pct": 0.14435695538057744,
+              "80_pct": 0.23995077932731748,
+              "90_pct": 0.26941305140357275
+            },
+            "confidence_definition": "2 * abs(P(FOG) - 0.5); retain highest confidence first"
+          },
+          "subject_macro_auprc": 0.4907341601591967,
+          "subjects_with_both_classes_for_macro_auprc": 4,
+          "per_subject": [
+            {
+              "subject": "1",
+              "n_windows": 678,
+              "positive_rate": 0.5162241887905604,
+              "auprc": 0.7879238727224237
+            },
+            {
+              "subject": "14",
+              "n_windows": 284,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "16",
+              "n_windows": 271,
+              "positive_rate": 0.01107011070110701,
+              "auprc": 0.03182382382382382
+            },
+            {
+              "subject": "2",
+              "n_windows": 1111,
+              "positive_rate": 0.5445544554455446,
+              "auprc": 0.7133704577579791
+            },
+            {
+              "subject": "6",
+              "n_windows": 243,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "9",
+              "n_windows": 460,
+              "positive_rate": 0.10652173913043478,
+              "auprc": 0.42981848633256015
+            }
+          ]
+        },
+        "test_eer_threshold_uses_test_labels_not_for_claims": 0.3998349606990814,
+        "n_windows": 8656,
+        "positive_rate": 0.20367375231053605,
+        "train_subjects": [
+          3,
+          4,
+          5,
+          7,
+          8,
+          10,
+          12,
+          15,
+          17,
+          20,
+          21
+        ],
+        "val_subjects_unused_in_final_fit": [
+          11,
+          13,
+          18,
+          19,
+          22
+        ],
+        "test_subjects": [
+          1,
+          2,
+          6,
+          9,
+          14,
+          16
+        ]
+      }
+    }
+  }
+}

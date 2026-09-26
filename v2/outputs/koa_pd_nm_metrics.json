@@ -1,0 +1,55 @@
+{
+  "dataset": "KOA-PD-NM gait videos inside 44pfnysy89-1.zip",
+  "what_this_is": "Side-view walking videos labeled knee osteoarthritis, Parkinson disease, or healthy. Not freezing-of-gait timing and not IMU.",
+  "archive_status": "Inner RAR ends early. 002_PD_01_SV.MOV failed checksum and was excluded. Two other severe-PD videos listed in the README are absent.",
+  "model": "Frozen DINOv2 ViT-S/14 mean of up to 6 frames; logistic head. 5-fold subject-grouped out-of-fold scores. Both walking directions of one person stay together.",
+  "videos_used": 187,
+  "subjects": {
+    "KOA": 20,
+    "PD": 7,
+    "NM": 30
+  },
+  "tasks": {
+    "PD_vs_healthy": {
+      "n_videos": 87,
+      "n_subjects": 37,
+      "positive_videos": 28,
+      "positive_rate_random_auprc": 0.3218390804597701,
+      "auprc": 0.9882697044334975,
+      "auroc": 0.9939467312348668
+    },
+    "any_disorder_vs_healthy": {
+      "n_videos": 187,
+      "n_subjects": 57,
+      "positive_videos": 128,
+      "positive_rate_random_auprc": 0.6844919786096256,
+      "auprc": 0.9950120732704906,
+      "auroc": 0.9856991525423727
+    },
+    "PD_vs_everyone_else": {
+      "n_videos": 187,
+      "n_subjects": 57,
+      "positive_videos": 28,
+      "positive_rate_random_auprc": 0.1497326203208556,
+      "auprc": 0.9732758322240419,
+      "auroc": 0.9948337825696316
+    },
+    "PD_severity_ML_vs_other_PD": {
+      "n_videos": 28,
+      "n_subjects": 7,
+      "positive_videos": 12,
+      "positive_rate_random_auprc": 0.42857142857142855,
+      "auprc": 0.5585811807444935,
+      "auroc": 0.4791666666666667
+    },
+    "PD_severity_MD_vs_other_PD": {
+      "n_videos": 28,
+      "n_subjects": 7,
+      "positive_videos": 14,
+      "positive_rate_random_auprc": 0.5,
+      "auprc": 0.5099137256957479,
+      "auroc": 0.3418367346938776
+    },
+    "PD_severity_SV_vs_other_PD": null
+  }
+}

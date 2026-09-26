@@ -1,0 +1,1752 @@
+{
+  "scope": "IMU only. No video input, video alignment, or cross-modal metric is used.",
+  "model": "logistic regression on 18 IMU spectral features",
+  "observation_s": 5.0,
+  "positive_window_rule": "at least 30% of the future horizon is FOG",
+  "episode_rule": "contiguous IMU FOG-flag runs lasting at least 0.5 seconds",
+  "new_onset_rule": "An onset counts only when a window with no FOG in its 5-second observation has that onset inside its future horizon. Lead time is onset minus the earliest such warning at or above the threshold. Alarms during an ongoing episode are not false alarms.",
+  "threshold_rule": "On the fit pool, search thresholds [0.2, 0.3, 0.5, 0.7, 0.9] and keep the one with the best new-onset sensitivity whose false-alarm rate is at most 5 per recording hour. Apply that frozen threshold to test. The test grid is descriptive and was not used to choose the threshold.",
+  "development_caveat": "This fixed participant split was examined during model development. These are development metrics, not an untouched final estimate.",
+  "horizons": {
+    "0.5": {
+      "horizon_s": 0.5,
+      "model_source": "new fit for this horizon; C selected by grouped CV on non-test subjects only",
+      "C": 1.0,
+      "grouped_cv_mean_auprc": 0.7043615375452431,
+      "false_alarm_budget_per_recording_hour": 5.0,
+      "threshold_selected_on_fit_pool": 0.9,
+      "threshold_grid": [
+        0.2,
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "fit_pool_in_sample": {
+        "split": "fit_pool_in_sample",
+        "window_metrics": {
+          "n_windows": 5865,
+          "n_subjects": 26,
+          "n_positive": 1256,
+          "positive_rate_and_random_auprc_baseline": 0.21415174765558398,
+          "auprc_average_precision": 0.9110959877084606,
+          "auroc": 0.9680547474962445,
+          "threshold_for_classification_metrics": 0.5,
+          "accuracy": 0.9069053708439898,
+          "balanced_accuracy": 0.9048569470144954,
+          "macro_f1": 0.8722415939230488,
+          "positive_precision": 0.7284427284427284,
+          "positive_recall_sensitivity": 0.9012738853503185,
+          "positive_f1": 0.805693950177936,
+          "specificity": 0.9084400086786721,
+          "confusion_matrix_tn_fp_fn_tp": [
+            4187,
+            422,
+            124,
+            1132
+          ],
+          "nll": 0.2295062730236378,
+          "brier_score": 0.06861035073967628,
+          "brier_skill_score_vs_prevalence_baseline": 0.5923106891956922,
+          "ece_positive_probability_10_fixed_bins": 0.07967038288364639,
+          "ece_top_label_10_fixed_bins": 0.0036813026053846907,
+          "risk_coverage": {
+            "aurc_trapezoid_lower_is_better": 0.020211838895149215,
+            "error_rate_at_coverage": {
+              "50_pct": 0.010228435049437436,
+              "80_pct": 0.03836317135549872,
+              "90_pct": 0.057776093957188863
+            },
+            "confidence_definition": "2 * abs(P(FOG) - 0.5); retain highest confidence first"
+          },
+          "subject_macro_auprc": 0.4719395273794841,
+          "subjects_with_both_classes_for_macro_auprc": 20,
+          "per_subject": [
+            {
+              "subject": "SUB01",
+              "n_windows": 230,
+              "positive_rate": 0.9695652173913043,
+              "auprc": 0.9963399693116957
+            },
+            {
+              "subject": "SUB02",
+              "n_windows": 115,
+              "positive_rate": 0.9043478260869565,
+              "auprc": 0.9797790602389163
+            },
+            {
+              "subject": "SUB03",
+              "n_windows": 345,
+              "positive_rate": 0.011594202898550725,
+              "auprc": 0.030065659134718356
+            },
+            {
+              "subject": "SUB04",
+              "n_windows": 115,
+              "positive_rate": 0.1565217391304348,
+              "auprc": 0.20397290195685158
+            },
+            {
+              "subject": "SUB05",
+              "n_windows": 230,
+              "positive_rate": 0.11304347826086956,
+              "auprc": 0.2095458662296135
+            },
+            {
+              "subject": "SUB06",
+              "n_windows": 230,
+              "positive_rate": 0.013043478260869565,
+              "auprc": 0.08981884057971015
+            },
+            {
+              "subject": "SUB07",
+              "n_windows": 345,
+              "positive_rate": 0.9884057971014493,
+              "auprc": 0.9970758380563063
+            },
+            {
+              "subject": "SUB08",
+              "n_windows": 115,
+              "positive_rate": 0.7130434782608696,
+              "auprc": 0.8378872643239669
+            },
+            {
+              "subject": "SUB10",
+              "n_windows": 230,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB11",
+              "n_windows": 230,
+              "positive_rate": 0.13478260869565217,
+              "auprc": 0.883687264049118
+            },
+            {
+              "subject": "SUB12",
+              "n_windows": 115,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB15",
+              "n_windows": 115,
+              "positive_rate": 0.034782608695652174,
+              "auprc": 0.053851904202119716
+            },
+            {
+              "subject": "SUB17",
+              "n_windows": 115,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB18",
+              "n_windows": 345,
+              "positive_rate": 0.02608695652173913,
+              "auprc": 0.4122445577323578
+            },
+            {
+              "subject": "SUB19",
+              "n_windows": 230,
+              "positive_rate": 0.9869565217391304,
+              "auprc": 0.9943242386136006
+            },
+            {
+              "subject": "SUB21",
+              "n_windows": 345,
+              "positive_rate": 0.034782608695652174,
+              "auprc": 0.18515987742058454
+            },
+            {
+              "subject": "SUB23",
+              "n_windows": 230,
+              "positive_rate": 0.04782608695652174,
+              "auprc": 0.33999365422159544
+            },
+            {
+              "subject": "SUB24",
+              "n_windows": 115,
+              "positive_rate": 0.22608695652173913,
+              "auprc": 0.31920828973784343
+            },
+            {
+              "subject": "SUB26",
+              "n_windows": 345,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB28",
+              "n_windows": 345,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB29",
+              "n_windows": 115,
+              "positive_rate": 0.40869565217391307,
+              "auprc": 0.5076374889275699
+            },
+            {
+              "subject": "SUB31",
+              "n_windows": 345,
+              "positive_rate": 0.05217391304347826,
+              "auprc": 0.22202090636107752
+            },
+            {
+              "subject": "SUB32",
+              "n_windows": 345,
+              "positive_rate": 0.005797101449275362,
+              "auprc": 0.05
+            },
+            {
+              "subject": "SUB33",
+              "n_windows": 115,
+              "positive_rate": 0.3739130434782609,
+              "auprc": 0.42053289954010664
+            },
+            {
+              "subject": "SUB34",
+              "n_windows": 115,
+              "positive_rate": 0.21739130434782608,
+              "auprc": 0.7056440669519274
+            },
+            {
+              "subject": "SUB35",
+              "n_windows": 345,
+              "positive_rate": 0.0,
+              "auprc": null
+            }
+          ]
+        },
+        "early_warning_windows_with_fog_free_observation": {
+          "n_windows": 4267,
+          "positive_rate_and_random_auprc_baseline": 0.003515350363252871,
+          "auprc": 0.01784537273076644,
+          "definition": "windows whose 5-second observation contains no FOG flag"
+        },
+        "new_onset_operating_point": {
+          "threshold": 0.9,
+          "eligible_new_onsets": 21,
+          "detected_new_onsets": 0,
+          "new_onset_sensitivity": 0.0,
+          "lead_time_s_median": null,
+          "lead_time_s_mean": null,
+          "lead_time_s_min": null,
+          "lead_time_s_max": null,
+          "false_alarms": 47,
+          "false_alarms_per_recording_hour": 27.647058823529413,
+          "false_alarms_per_non_fog_hour": 34.98058572323834,
+          "alarms_during_ongoing_fog_not_counted_as_false_alarms": 862,
+          "recorded_hours": 1.7,
+          "new_onset_event_auprc": 0.02000256841538376,
+          "new_onset_event_random_auprc_baseline": 0.004914579920430611,
+          "fog_free_negative_windows_in_event_auprc": 4252
+        },
+        "reliability_diagram_positive_probability": [
+          {
+            "bin": "0.0-0.1",
+            "n": 3155,
+            "mean_predicted_fog_probability": 0.025022851303219795,
+            "observed_fog_rate": 0.005705229793977813
+          },
+          {
+            "bin": "0.1-0.2",
+            "n": 490,
+            "mean_predicted_fog_probability": 0.14445634186267853,
+            "observed_fog_rate": 0.04693877551020408
+          },
+          {
+            "bin": "0.2-0.3",
+            "n": 312,
+            "mean_predicted_fog_probability": 0.24712347984313965,
+            "observed_fog_rate": 0.07051282051282051
+          },
+          {
+            "bin": "0.3-0.4",
+            "n": 190,
+            "mean_predicted_fog_probability": 0.35050177574157715,
+            "observed_fog_rate": 0.15789473684210525
+          },
+          {
+            "bin": "0.4-0.5",
+            "n": 164,
+            "mean_predicted_fog_probability": 0.44942596554756165,
+            "observed_fog_rate": 0.18902439024390244
+          },
+          {
+            "bin": "0.5-0.6",
+            "n": 131,
+            "mean_predicted_fog_probability": 0.5490899682044983,
+            "observed_fog_rate": 0.22137404580152673
+          },
+          {
+            "bin": "0.6-0.7",
+            "n": 138,
+            "mean_predicted_fog_probability": 0.6497448682785034,
+            "observed_fog_rate": 0.37681159420289856
+          },
+          {
+            "bin": "0.7-0.8",
+            "n": 162,
+            "mean_predicted_fog_probability": 0.7537661194801331,
+            "observed_fog_rate": 0.46296296296296297
+          },
+          {
+            "bin": "0.8-0.9",
+            "n": 185,
+            "mean_predicted_fog_probability": 0.8507577180862427,
+            "observed_fog_rate": 0.6162162162162163
+          },
+          {
+            "bin": "0.9-1.0",
+            "n": 938,
+            "mean_predicted_fog_probability": 0.9755186438560486,
+            "observed_fog_rate": 0.9189765458422174
+          }
+        ]
+      },
+      "fixed_test": {
+        "split": "fixed_test",
+        "window_metrics": {
+          "n_windows": 2300,
+          "n_subjects": 9,
+          "n_positive": 341,
+          "positive_rate_and_random_auprc_baseline": 0.1482608695652174,
+          "auprc_average_precision": 0.6063797822642983,
+          "auroc": 0.8484249699484595,
+          "threshold_for_classification_metrics": 0.5,
+          "accuracy": 0.8534782608695652,
+          "balanced_accuracy": 0.7359633483478764,
+          "macro_f1": 0.7241023359288098,
+          "positive_precision": 0.5052083333333334,
+          "positive_recall_sensitivity": 0.5689149560117303,
+          "positive_f1": 0.5351724137931034,
+          "specificity": 0.9030117406840225,
+          "confusion_matrix_tn_fp_fn_tp": [
+            1769,
+            190,
+            147,
+            194
+          ],
+          "nll": 0.33135398723712206,
+          "brier_score": 0.10258040386357105,
+          "brier_skill_score_vs_prevalence_baseline": 0.18767230207779884,
+          "ece_positive_probability_10_fixed_bins": 0.07928133103441012,
+          "ece_top_label_10_fixed_bins": 0.0209871684914864,
+          "risk_coverage": {
+            "aurc_trapezoid_lower_is_better": 0.0462427545358667,
+            "error_rate_at_coverage": {
+              "50_pct": 0.03304347826086956,
+              "80_pct": 0.0782608695652174,
+              "90_pct": 0.10772946859903382
+            },
+            "confidence_definition": "2 * abs(P(FOG) - 0.5); retain highest confidence first"
+          },
+          "subject_macro_auprc": 0.49976652822758977,
+          "subjects_with_both_classes_for_macro_auprc": 6,
+          "per_subject": [
+            {
+              "subject": "SUB09",
+              "n_windows": 230,
+              "positive_rate": 0.08695652173913043,
+              "auprc": 0.23509608732111198
+            },
+            {
+              "subject": "SUB13",
+              "n_windows": 115,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB14",
+              "n_windows": 345,
+              "positive_rate": 0.26956521739130435,
+              "auprc": 0.45316839178356
+            },
+            {
+              "subject": "SUB16",
+              "n_windows": 230,
+              "positive_rate": 0.17391304347826086,
+              "auprc": 0.6032711123284178
+            },
+            {
+              "subject": "SUB20",
+              "n_windows": 345,
+              "positive_rate": 0.02318840579710145,
+              "auprc": 0.02068503065263345
+            },
+            {
+              "subject": "SUB22",
+              "n_windows": 115,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB25",
+              "n_windows": 345,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB27",
+              "n_windows": 345,
+              "positive_rate": 0.3739130434782609,
+              "auprc": 0.8207598729869202
+            },
+            {
+              "subject": "SUB30",
+              "n_windows": 230,
+              "positive_rate": 0.2217391304347826,
+              "auprc": 0.8656186742928953
+            }
+          ]
+        },
+        "early_warning_windows_with_fog_free_observation": {
+          "n_windows": 1646,
+          "positive_rate_and_random_auprc_baseline": 0.00850546780072904,
+          "auprc": 0.02253898176695313,
+          "definition": "windows whose 5-second observation contains no FOG flag"
+        },
+        "new_onset_operating_point": {
+          "threshold": 0.9,
+          "eligible_new_onsets": 22,
+          "detected_new_onsets": 0,
+          "new_onset_sensitivity": 0.0,
+          "lead_time_s_median": null,
+          "lead_time_s_mean": null,
+          "lead_time_s_min": null,
+          "lead_time_s_max": null,
+          "false_alarms": 8,
+          "false_alarms_per_recording_hour": 12.0,
+          "false_alarms_per_non_fog_hour": 13.906010698091999,
+          "alarms_during_ongoing_fog_not_counted_as_false_alarms": 75,
+          "recorded_hours": 0.6666666666666666,
+          "new_onset_event_auprc": 0.033189151449496544,
+          "new_onset_event_random_auprc_baseline": 0.013301088270858524,
+          "fog_free_negative_windows_in_event_auprc": 1632
+        },
+        "reliability_diagram_positive_probability": [
+          {
+            "bin": "0.0-0.1",
+            "n": 1216,
+            "mean_predicted_fog_probability": 0.030883362516760826,
+            "observed_fog_rate": 0.038651315789473686
+          },
+          {
+            "bin": "0.1-0.2",
+            "n": 244,
+            "mean_predicted_fog_probability": 0.14367029070854187,
+            "observed_fog_rate": 0.11885245901639344
+          },
+          {
+            "bin": "0.2-0.3",
+            "n": 191,
+            "mean_predicted_fog_probability": 0.24681414663791656,
+            "observed_fog_rate": 0.1099476439790576
+          },
+          {
+            "bin": "0.3-0.4",
+            "n": 139,
+            "mean_predicted_fog_probability": 0.35068461298942566,
+            "observed_fog_rate": 0.17266187050359713
+          },
+          {
+            "bin": "0.4-0.5",
+            "n": 126,
+            "mean_predicted_fog_probability": 0.4508266746997833,
+            "observed_fog_rate": 0.20634920634920634
+          },
+          {
+            "bin": "0.5-0.6",
+            "n": 113,
+            "mean_predicted_fog_probability": 0.5494982004165649,
+            "observed_fog_rate": 0.18584070796460178
+          },
+          {
+            "bin": "0.6-0.7",
+            "n": 91,
+            "mean_predicted_fog_probability": 0.6470312476158142,
+            "observed_fog_rate": 0.4065934065934066
+          },
+          {
+            "bin": "0.7-0.8",
+            "n": 47,
+            "mean_predicted_fog_probability": 0.7474558353424072,
+            "observed_fog_rate": 0.5319148936170213
+          },
+          {
+            "bin": "0.8-0.9",
+            "n": 46,
+            "mean_predicted_fog_probability": 0.8526924252510071,
+            "observed_fog_rate": 0.7608695652173914
+          },
+          {
+            "bin": "0.9-1.0",
+            "n": 87,
+            "mean_predicted_fog_probability": 0.9635335803031921,
+            "observed_fog_rate": 0.8735632183908046
+          }
+        ],
+        "new_onset_threshold_grid": [
+          {
+            "threshold": 0.2,
+            "eligible_new_onsets": 22,
+            "detected_new_onsets": 13,
+            "new_onset_sensitivity": 0.5909090909090909,
+            "lead_time_s_median": 0.203125,
+            "lead_time_s_mean": 0.23377403846153846,
+            "lead_time_s_min": 0.0078125,
+            "lead_time_s_max": 0.4921875,
+            "false_alarms": 319,
+            "false_alarms_per_recording_hour": 478.5,
+            "false_alarms_per_non_fog_hour": 554.5021765864184,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 256,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.033189151449496544,
+            "new_onset_event_random_auprc_baseline": 0.013301088270858524,
+            "new_onset_events_in_auprc": 22,
+            "fog_free_negative_windows_in_event_auprc": 1632
+          },
+          {
+            "threshold": 0.3,
+            "eligible_new_onsets": 22,
+            "detected_new_onsets": 8,
+            "new_onset_sensitivity": 0.36363636363636365,
+            "lead_time_s_median": 0.16796875,
+            "lead_time_s_mean": 0.1787109375,
+            "lead_time_s_min": 0.0078125,
+            "lead_time_s_max": 0.3828125,
+            "false_alarms": 237,
+            "false_alarms_per_recording_hour": 355.5,
+            "false_alarms_per_non_fog_hour": 411.96556693097546,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 237,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.033189151449496544,
+            "new_onset_event_random_auprc_baseline": 0.013301088270858524,
+            "new_onset_events_in_auprc": 22,
+            "fog_free_negative_windows_in_event_auprc": 1632
+          },
+          {
+            "threshold": 0.5,
+            "eligible_new_onsets": 22,
+            "detected_new_onsets": 3,
+            "new_onset_sensitivity": 0.13636363636363635,
+            "lead_time_s_median": 0.1328125,
+            "lead_time_s_mean": 0.19270833333333334,
+            "lead_time_s_min": 0.0625,
+            "lead_time_s_max": 0.3828125,
+            "false_alarms": 118,
+            "false_alarms_per_recording_hour": 177.0,
+            "false_alarms_per_non_fog_hour": 205.11365779685696,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 190,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.033189151449496544,
+            "new_onset_event_random_auprc_baseline": 0.013301088270858524,
+            "new_onset_events_in_auprc": 22,
+            "fog_free_negative_windows_in_event_auprc": 1632
+          },
+          {
+            "threshold": 0.7,
+            "eligible_new_onsets": 22,
+            "detected_new_onsets": 0,
+            "new_onset_sensitivity": 0.0,
+            "lead_time_s_median": null,
+            "lead_time_s_mean": null,
+            "lead_time_s_min": null,
+            "lead_time_s_max": null,
+            "false_alarms": 32,
+            "false_alarms_per_recording_hour": 48.0,
+            "false_alarms_per_non_fog_hour": 55.624042792367995,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 134,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.033189151449496544,
+            "new_onset_event_random_auprc_baseline": 0.013301088270858524,
+            "new_onset_events_in_auprc": 22,
+            "fog_free_negative_windows_in_event_auprc": 1632
+          },
+          {
+            "threshold": 0.9,
+            "eligible_new_onsets": 22,
+            "detected_new_onsets": 0,
+            "new_onset_sensitivity": 0.0,
+            "lead_time_s_median": null,
+            "lead_time_s_mean": null,
+            "lead_time_s_min": null,
+            "lead_time_s_max": null,
+            "false_alarms": 8,
+            "false_alarms_per_recording_hour": 12.0,
+            "false_alarms_per_non_fog_hour": 13.906010698091999,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 75,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.033189151449496544,
+            "new_onset_event_random_auprc_baseline": 0.013301088270858524,
+            "new_onset_events_in_auprc": 22,
+            "fog_free_negative_windows_in_event_auprc": 1632
+          }
+        ]
+      }
+    },
+    "1.0": {
+      "horizon_s": 1.0,
+      "model_source": "new fit for this horizon; C selected by grouped CV on non-test subjects only",
+      "C": 1.0,
+      "grouped_cv_mean_auprc": 0.7022529612511992,
+      "false_alarm_budget_per_recording_hour": 5.0,
+      "threshold_selected_on_fit_pool": 0.9,
+      "threshold_grid": [
+        0.2,
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "fit_pool_in_sample": {
+        "split": "fit_pool_in_sample",
+        "window_metrics": {
+          "n_windows": 5865,
+          "n_subjects": 26,
+          "n_positive": 1278,
+          "positive_rate_and_random_auprc_baseline": 0.21790281329923275,
+          "auprc_average_precision": 0.9022540225558362,
+          "auroc": 0.965081882424065,
+          "threshold_for_classification_metrics": 0.5,
+          "accuracy": 0.9036658141517476,
+          "balanced_accuracy": 0.9022871331615885,
+          "macro_f1": 0.8695292682854805,
+          "positive_precision": 0.7246376811594203,
+          "positive_recall_sensitivity": 0.8998435054773083,
+          "positive_f1": 0.8027923211169284,
+          "specificity": 0.9047307608458688,
+          "confusion_matrix_tn_fp_fn_tp": [
+            4150,
+            437,
+            128,
+            1150
+          ],
+          "nll": 0.24002635607788445,
+          "brier_score": 0.07140085807111937,
+          "brier_skill_score_vs_prevalence_baseline": 0.5810329489505399,
+          "ece_positive_probability_10_fixed_bins": 0.08208139360219777,
+          "ece_top_label_10_fixed_bins": 0.006982573694732133,
+          "risk_coverage": {
+            "aurc_trapezoid_lower_is_better": 0.022951851633343078,
+            "error_rate_at_coverage": {
+              "50_pct": 0.012956017729287419,
+              "80_pct": 0.039428815004262575,
+              "90_pct": 0.060806971017238115
+            },
+            "confidence_definition": "2 * abs(P(FOG) - 0.5); retain highest confidence first"
+          },
+          "subject_macro_auprc": 0.4606667748620749,
+          "subjects_with_both_classes_for_macro_auprc": 20,
+          "per_subject": [
+            {
+              "subject": "SUB01",
+              "n_windows": 230,
+              "positive_rate": 0.9782608695652174,
+              "auprc": 0.997521403116292
+            },
+            {
+              "subject": "SUB02",
+              "n_windows": 115,
+              "positive_rate": 0.8956521739130435,
+              "auprc": 0.9527123699437078
+            },
+            {
+              "subject": "SUB03",
+              "n_windows": 345,
+              "positive_rate": 0.008695652173913044,
+              "auprc": 0.02738022113022113
+            },
+            {
+              "subject": "SUB04",
+              "n_windows": 115,
+              "positive_rate": 0.17391304347826086,
+              "auprc": 0.1930565071467101
+            },
+            {
+              "subject": "SUB05",
+              "n_windows": 230,
+              "positive_rate": 0.12173913043478261,
+              "auprc": 0.19609587495679903
+            },
+            {
+              "subject": "SUB06",
+              "n_windows": 230,
+              "positive_rate": 0.013043478260869565,
+              "auprc": 0.06700937950937952
+            },
+            {
+              "subject": "SUB07",
+              "n_windows": 345,
+              "positive_rate": 0.9884057971014493,
+              "auprc": 0.9945225509679332
+            },
+            {
+              "subject": "SUB08",
+              "n_windows": 115,
+              "positive_rate": 0.7217391304347827,
+              "auprc": 0.8436742449142732
+            },
+            {
+              "subject": "SUB10",
+              "n_windows": 230,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB11",
+              "n_windows": 230,
+              "positive_rate": 0.1391304347826087,
+              "auprc": 0.8439263569217944
+            },
+            {
+              "subject": "SUB12",
+              "n_windows": 115,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB15",
+              "n_windows": 115,
+              "positive_rate": 0.034782608695652174,
+              "auprc": 0.05938141759079974
+            },
+            {
+              "subject": "SUB17",
+              "n_windows": 115,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB18",
+              "n_windows": 345,
+              "positive_rate": 0.028985507246376812,
+              "auprc": 0.380271567348517
+            },
+            {
+              "subject": "SUB19",
+              "n_windows": 230,
+              "positive_rate": 0.9869565217391304,
+              "auprc": 0.9943475456809551
+            },
+            {
+              "subject": "SUB21",
+              "n_windows": 345,
+              "positive_rate": 0.03768115942028986,
+              "auprc": 0.18756608580211376
+            },
+            {
+              "subject": "SUB23",
+              "n_windows": 230,
+              "positive_rate": 0.05217391304347826,
+              "auprc": 0.3027809354925398
+            },
+            {
+              "subject": "SUB24",
+              "n_windows": 115,
+              "positive_rate": 0.25217391304347825,
+              "auprc": 0.30317533361478505
+            },
+            {
+              "subject": "SUB26",
+              "n_windows": 345,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB28",
+              "n_windows": 345,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB29",
+              "n_windows": 115,
+              "positive_rate": 0.41739130434782606,
+              "auprc": 0.483914224921884
+            },
+            {
+              "subject": "SUB31",
+              "n_windows": 345,
+              "positive_rate": 0.06086956521739131,
+              "auprc": 0.220864974195638
+            },
+            {
+              "subject": "SUB32",
+              "n_windows": 345,
+              "positive_rate": 0.008695652173913044,
+              "auprc": 0.04209401709401709
+            },
+            {
+              "subject": "SUB33",
+              "n_windows": 115,
+              "positive_rate": 0.4,
+              "auprc": 0.43654912688627245
+            },
+            {
+              "subject": "SUB34",
+              "n_windows": 115,
+              "positive_rate": 0.23478260869565218,
+              "auprc": 0.6864913600068658
+            },
+            {
+              "subject": "SUB35",
+              "n_windows": 345,
+              "positive_rate": 0.0,
+              "auprc": null
+            }
+          ]
+        },
+        "early_warning_windows_with_fog_free_observation": {
+          "n_windows": 4267,
+          "positive_rate_and_random_auprc_baseline": 0.00890555425357394,
+          "auprc": 0.03673802364070923,
+          "definition": "windows whose 5-second observation contains no FOG flag"
+        },
+        "new_onset_operating_point": {
+          "threshold": 0.9,
+          "eligible_new_onsets": 55,
+          "detected_new_onsets": 2,
+          "new_onset_sensitivity": 0.03636363636363636,
+          "lead_time_s_median": 0.65234375,
+          "lead_time_s_mean": 0.65234375,
+          "lead_time_s_min": 0.625,
+          "lead_time_s_max": 0.6796875,
+          "false_alarms": 45,
+          "false_alarms_per_recording_hour": 26.47058823529412,
+          "false_alarms_per_non_fog_hour": 33.49205016054734,
+          "alarms_during_ongoing_fog_not_counted_as_false_alarms": 856,
+          "recorded_hours": 1.7,
+          "new_onset_event_auprc": 0.05082264830123551,
+          "new_onset_event_random_auprc_baseline": 0.012838468720821661,
+          "fog_free_negative_windows_in_event_auprc": 4229
+        },
+        "reliability_diagram_positive_probability": [
+          {
+            "bin": "0.0-0.1",
+            "n": 3048,
+            "mean_predicted_fog_probability": 0.026824166998267174,
+            "observed_fog_rate": 0.005905511811023622
+          },
+          {
+            "bin": "0.1-0.2",
+            "n": 549,
+            "mean_predicted_fog_probability": 0.1426527202129364,
+            "observed_fog_rate": 0.04189435336976321
+          },
+          {
+            "bin": "0.2-0.3",
+            "n": 311,
+            "mean_predicted_fog_probability": 0.24704048037528992,
+            "observed_fog_rate": 0.08360128617363344
+          },
+          {
+            "bin": "0.3-0.4",
+            "n": 199,
+            "mean_predicted_fog_probability": 0.34865373373031616,
+            "observed_fog_rate": 0.15577889447236182
+          },
+          {
+            "bin": "0.4-0.5",
+            "n": 171,
+            "mean_predicted_fog_probability": 0.44507870078086853,
+            "observed_fog_rate": 0.17543859649122806
+          },
+          {
+            "bin": "0.5-0.6",
+            "n": 149,
+            "mean_predicted_fog_probability": 0.5477924942970276,
+            "observed_fog_rate": 0.28859060402684567
+          },
+          {
+            "bin": "0.6-0.7",
+            "n": 140,
+            "mean_predicted_fog_probability": 0.651183009147644,
+            "observed_fog_rate": 0.32857142857142857
+          },
+          {
+            "bin": "0.7-0.8",
+            "n": 170,
+            "mean_predicted_fog_probability": 0.7548633217811584,
+            "observed_fog_rate": 0.4823529411764706
+          },
+          {
+            "bin": "0.8-0.9",
+            "n": 196,
+            "mean_predicted_fog_probability": 0.8522641062736511,
+            "observed_fog_rate": 0.6275510204081632
+          },
+          {
+            "bin": "0.9-1.0",
+            "n": 932,
+            "mean_predicted_fog_probability": 0.9751647710800171,
+            "observed_fog_rate": 0.9184549356223176
+          }
+        ]
+      },
+      "fixed_test": {
+        "split": "fixed_test",
+        "window_metrics": {
+          "n_windows": 2300,
+          "n_subjects": 9,
+          "n_positive": 365,
+          "positive_rate_and_random_auprc_baseline": 0.15869565217391304,
+          "auprc_average_precision": 0.5941589709042416,
+          "auroc": 0.8421648791193233,
+          "threshold_for_classification_metrics": 0.5,
+          "accuracy": 0.84,
+          "balanced_accuracy": 0.7270751477823794,
+          "macro_f1": 0.7153538101022493,
+          "positive_precision": 0.4963680387409201,
+          "positive_recall_sensitivity": 0.5616438356164384,
+          "positive_f1": 0.5269922879177378,
+          "specificity": 0.8925064599483205,
+          "confusion_matrix_tn_fp_fn_tp": [
+            1727,
+            208,
+            160,
+            205
+          ],
+          "nll": 0.34847946709605315,
+          "brier_score": 0.1097352295585203,
+          "brier_skill_score_vs_prevalence_baseline": 0.17808309176372883,
+          "ece_positive_probability_10_fixed_bins": 0.0765241028318364,
+          "ece_top_label_10_fixed_bins": 0.017810168377903307,
+          "risk_coverage": {
+            "aurc_trapezoid_lower_is_better": 0.05131523389318118,
+            "error_rate_at_coverage": {
+              "50_pct": 0.034782608695652174,
+              "80_pct": 0.08804347826086957,
+              "90_pct": 0.12222222222222222
+            },
+            "confidence_definition": "2 * abs(P(FOG) - 0.5); retain highest confidence first"
+          },
+          "subject_macro_auprc": 0.5031169338736783,
+          "subjects_with_both_classes_for_macro_auprc": 6,
+          "per_subject": [
+            {
+              "subject": "SUB09",
+              "n_windows": 230,
+              "positive_rate": 0.10434782608695652,
+              "auprc": 0.2814388581785902
+            },
+            {
+              "subject": "SUB13",
+              "n_windows": 115,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB14",
+              "n_windows": 345,
+              "positive_rate": 0.2927536231884058,
+              "auprc": 0.44839881001374715
+            },
+            {
+              "subject": "SUB16",
+              "n_windows": 230,
+              "positive_rate": 0.19130434782608696,
+              "auprc": 0.6229750512843547
+            },
+            {
+              "subject": "SUB20",
+              "n_windows": 345,
+              "positive_rate": 0.02318840579710145,
+              "auprc": 0.02126433093233111
+            },
+            {
+              "subject": "SUB22",
+              "n_windows": 115,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB25",
+              "n_windows": 345,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB27",
+              "n_windows": 345,
+              "positive_rate": 0.3826086956521739,
+              "auprc": 0.8120248872296199
+            },
+            {
+              "subject": "SUB30",
+              "n_windows": 230,
+              "positive_rate": 0.24347826086956523,
+              "auprc": 0.8325996656034267
+            }
+          ]
+        },
+        "early_warning_windows_with_fog_free_observation": {
+          "n_windows": 1646,
+          "positive_rate_and_random_auprc_baseline": 0.020656136087484813,
+          "auprc": 0.04794565363888183,
+          "definition": "windows whose 5-second observation contains no FOG flag"
+        },
+        "new_onset_operating_point": {
+          "threshold": 0.9,
+          "eligible_new_onsets": 49,
+          "detected_new_onsets": 0,
+          "new_onset_sensitivity": 0.0,
+          "lead_time_s_median": null,
+          "lead_time_s_mean": null,
+          "lead_time_s_min": null,
+          "lead_time_s_max": null,
+          "false_alarms": 8,
+          "false_alarms_per_recording_hour": 12.0,
+          "false_alarms_per_non_fog_hour": 13.906010698091999,
+          "alarms_during_ongoing_fog_not_counted_as_false_alarms": 73,
+          "recorded_hours": 0.6666666666666666,
+          "new_onset_event_auprc": 0.06064398458260537,
+          "new_onset_event_random_auprc_baseline": 0.029500301023479832,
+          "fog_free_negative_windows_in_event_auprc": 1612
+        },
+        "reliability_diagram_positive_probability": [
+          {
+            "bin": "0.0-0.1",
+            "n": 1169,
+            "mean_predicted_fog_probability": 0.03363528475165367,
+            "observed_fog_rate": 0.03934987168520103
+          },
+          {
+            "bin": "0.1-0.2",
+            "n": 258,
+            "mean_predicted_fog_probability": 0.14431491494178772,
+            "observed_fog_rate": 0.12403100775193798
+          },
+          {
+            "bin": "0.2-0.3",
+            "n": 183,
+            "mean_predicted_fog_probability": 0.24889756739139557,
+            "observed_fog_rate": 0.12568306010928962
+          },
+          {
+            "bin": "0.3-0.4",
+            "n": 152,
+            "mean_predicted_fog_probability": 0.3487088084220886,
+            "observed_fog_rate": 0.20394736842105263
+          },
+          {
+            "bin": "0.4-0.5",
+            "n": 125,
+            "mean_predicted_fog_probability": 0.45062166452407837,
+            "observed_fog_rate": 0.224
+          },
+          {
+            "bin": "0.5-0.6",
+            "n": 128,
+            "mean_predicted_fog_probability": 0.5474812984466553,
+            "observed_fog_rate": 0.2421875
+          },
+          {
+            "bin": "0.6-0.7",
+            "n": 103,
+            "mean_predicted_fog_probability": 0.6468413472175598,
+            "observed_fog_rate": 0.3786407766990291
+          },
+          {
+            "bin": "0.7-0.8",
+            "n": 52,
+            "mean_predicted_fog_probability": 0.74916011095047,
+            "observed_fog_rate": 0.5192307692307693
+          },
+          {
+            "bin": "0.8-0.9",
+            "n": 45,
+            "mean_predicted_fog_probability": 0.8588801622390747,
+            "observed_fog_rate": 0.7333333333333333
+          },
+          {
+            "bin": "0.9-1.0",
+            "n": 85,
+            "mean_predicted_fog_probability": 0.9635756611824036,
+            "observed_fog_rate": 0.8823529411764706
+          }
+        ],
+        "new_onset_threshold_grid": [
+          {
+            "threshold": 0.2,
+            "eligible_new_onsets": 49,
+            "detected_new_onsets": 29,
+            "new_onset_sensitivity": 0.5918367346938775,
+            "lead_time_s_median": 0.4921875,
+            "lead_time_s_mean": 0.5029633620689655,
+            "lead_time_s_min": 0.0078125,
+            "lead_time_s_max": 0.9921875,
+            "false_alarms": 324,
+            "false_alarms_per_recording_hour": 486.0,
+            "false_alarms_per_non_fog_hour": 563.1934332727259,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 258,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.06064398458260537,
+            "new_onset_event_random_auprc_baseline": 0.029500301023479832,
+            "new_onset_events_in_auprc": 49,
+            "fog_free_negative_windows_in_event_auprc": 1612
+          },
+          {
+            "threshold": 0.3,
+            "eligible_new_onsets": 49,
+            "detected_new_onsets": 19,
+            "new_onset_sensitivity": 0.3877551020408163,
+            "lead_time_s_median": 0.53125,
+            "lead_time_s_mean": 0.4654605263157895,
+            "lead_time_s_min": 0.0078125,
+            "lead_time_s_max": 0.9921875,
+            "false_alarms": 247,
+            "false_alarms_per_recording_hour": 370.5,
+            "false_alarms_per_non_fog_hour": 429.34808030359045,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 242,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.06064398458260537,
+            "new_onset_event_random_auprc_baseline": 0.029500301023479832,
+            "new_onset_events_in_auprc": 49,
+            "fog_free_negative_windows_in_event_auprc": 1612
+          },
+          {
+            "threshold": 0.5,
+            "eligible_new_onsets": 49,
+            "detected_new_onsets": 7,
+            "new_onset_sensitivity": 0.14285714285714285,
+            "lead_time_s_median": 0.6015625,
+            "lead_time_s_mean": 0.5044642857142857,
+            "lead_time_s_min": 0.0625,
+            "lead_time_s_max": 0.953125,
+            "false_alarms": 127,
+            "false_alarms_per_recording_hour": 190.5,
+            "false_alarms_per_non_fog_hour": 220.75791983221046,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 198,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.06064398458260537,
+            "new_onset_event_random_auprc_baseline": 0.029500301023479832,
+            "new_onset_events_in_auprc": 49,
+            "fog_free_negative_windows_in_event_auprc": 1612
+          },
+          {
+            "threshold": 0.7,
+            "eligible_new_onsets": 49,
+            "detected_new_onsets": 1,
+            "new_onset_sensitivity": 0.02040816326530612,
+            "lead_time_s_median": 0.7265625,
+            "lead_time_s_mean": 0.7265625,
+            "lead_time_s_min": 0.7265625,
+            "lead_time_s_max": 0.7265625,
+            "false_alarms": 33,
+            "false_alarms_per_recording_hour": 49.5,
+            "false_alarms_per_non_fog_hour": 57.36229412962949,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 133,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.06064398458260537,
+            "new_onset_event_random_auprc_baseline": 0.029500301023479832,
+            "new_onset_events_in_auprc": 49,
+            "fog_free_negative_windows_in_event_auprc": 1612
+          },
+          {
+            "threshold": 0.9,
+            "eligible_new_onsets": 49,
+            "detected_new_onsets": 0,
+            "new_onset_sensitivity": 0.0,
+            "lead_time_s_median": null,
+            "lead_time_s_mean": null,
+            "lead_time_s_min": null,
+            "lead_time_s_max": null,
+            "false_alarms": 8,
+            "false_alarms_per_recording_hour": 12.0,
+            "false_alarms_per_non_fog_hour": 13.906010698091999,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 73,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.06064398458260537,
+            "new_onset_event_random_auprc_baseline": 0.029500301023479832,
+            "new_onset_events_in_auprc": 49,
+            "fog_free_negative_windows_in_event_auprc": 1612
+          }
+        ]
+      }
+    },
+    "2.0": {
+      "horizon_s": 2.0,
+      "model_source": "saved spectral_probe.npz; C previously selected on non-test grouped CV",
+      "C": 0.5,
+      "grouped_cv_mean_auprc": 0.700198644439917,
+      "false_alarm_budget_per_recording_hour": 5.0,
+      "threshold_selected_on_fit_pool": 0.9,
+      "threshold_grid": [
+        0.2,
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ],
+      "fit_pool_in_sample": {
+        "split": "fit_pool_in_sample",
+        "window_metrics": {
+          "n_windows": 5814,
+          "n_subjects": 26,
+          "n_positive": 1295,
+          "positive_rate_and_random_auprc_baseline": 0.22273821809425526,
+          "auprc_average_precision": 0.9012741316535469,
+          "auroc": 0.9631935858977239,
+          "threshold_for_classification_metrics": 0.5,
+          "accuracy": 0.9005847953216374,
+          "balanced_accuracy": 0.899136635449979,
+          "macro_f1": 0.8672330035715414,
+          "positive_precision": 0.7233644859813084,
+          "positive_recall_sensitivity": 0.8965250965250965,
+          "positive_f1": 0.8006896551724138,
+          "specificity": 0.9017481743748617,
+          "confusion_matrix_tn_fp_fn_tp": [
+            4075,
+            444,
+            134,
+            1161
+          ],
+          "nll": 0.24654549812942206,
+          "brier_score": 0.07346985344701883,
+          "brier_skill_score_vs_prevalence_baseline": 0.5756276119022498,
+          "ece_positive_probability_10_fixed_bins": 0.08359129830844342,
+          "ece_top_label_10_fixed_bins": 0.007430183414989253,
+          "risk_coverage": {
+            "aurc_trapezoid_lower_is_better": 0.024166407445057263,
+            "error_rate_at_coverage": {
+              "50_pct": 0.01479188166494668,
+              "80_pct": 0.04213241616509028,
+              "90_pct": 0.06439900630613415
+            },
+            "confidence_definition": "2 * abs(P(FOG) - 0.5); retain highest confidence first"
+          },
+          "subject_macro_auprc": 0.4635004737423685,
+          "subjects_with_both_classes_for_macro_auprc": 20,
+          "per_subject": [
+            {
+              "subject": "SUB01",
+              "n_windows": 228,
+              "positive_rate": 0.9824561403508771,
+              "auprc": 0.9986194450284738
+            },
+            {
+              "subject": "SUB02",
+              "n_windows": 114,
+              "positive_rate": 0.9122807017543859,
+              "auprc": 0.9693134206110938
+            },
+            {
+              "subject": "SUB03",
+              "n_windows": 342,
+              "positive_rate": 0.014619883040935672,
+              "auprc": 0.044357393953047414
+            },
+            {
+              "subject": "SUB04",
+              "n_windows": 114,
+              "positive_rate": 0.20175438596491227,
+              "auprc": 0.27892788437363936
+            },
+            {
+              "subject": "SUB05",
+              "n_windows": 228,
+              "positive_rate": 0.13157894736842105,
+              "auprc": 0.17592561783041932
+            },
+            {
+              "subject": "SUB06",
+              "n_windows": 228,
+              "positive_rate": 0.013157894736842105,
+              "auprc": 0.050711725550435224
+            },
+            {
+              "subject": "SUB07",
+              "n_windows": 342,
+              "positive_rate": 0.9883040935672515,
+              "auprc": 0.9942953924900899
+            },
+            {
+              "subject": "SUB08",
+              "n_windows": 114,
+              "positive_rate": 0.7543859649122807,
+              "auprc": 0.8560392752259507
+            },
+            {
+              "subject": "SUB10",
+              "n_windows": 228,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB11",
+              "n_windows": 228,
+              "positive_rate": 0.14473684210526316,
+              "auprc": 0.8446975424600607
+            },
+            {
+              "subject": "SUB12",
+              "n_windows": 114,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB15",
+              "n_windows": 114,
+              "positive_rate": 0.043859649122807015,
+              "auprc": 0.06233347611908332
+            },
+            {
+              "subject": "SUB17",
+              "n_windows": 114,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB18",
+              "n_windows": 342,
+              "positive_rate": 0.029239766081871343,
+              "auprc": 0.3777232571548323
+            },
+            {
+              "subject": "SUB19",
+              "n_windows": 228,
+              "positive_rate": 0.9868421052631579,
+              "auprc": 0.9844750839342357
+            },
+            {
+              "subject": "SUB21",
+              "n_windows": 342,
+              "positive_rate": 0.04093567251461988,
+              "auprc": 0.19243029948526658
+            },
+            {
+              "subject": "SUB23",
+              "n_windows": 228,
+              "positive_rate": 0.05701754385964912,
+              "auprc": 0.31796994430679276
+            },
+            {
+              "subject": "SUB24",
+              "n_windows": 114,
+              "positive_rate": 0.2807017543859649,
+              "auprc": 0.3071797834295859
+            },
+            {
+              "subject": "SUB26",
+              "n_windows": 342,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB28",
+              "n_windows": 342,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB29",
+              "n_windows": 114,
+              "positive_rate": 0.4649122807017544,
+              "auprc": 0.5349612212658408
+            },
+            {
+              "subject": "SUB31",
+              "n_windows": 342,
+              "positive_rate": 0.06140350877192982,
+              "auprc": 0.12845629834463915
+            },
+            {
+              "subject": "SUB32",
+              "n_windows": 342,
+              "positive_rate": 0.008771929824561403,
+              "auprc": 0.04161579161579161
+            },
+            {
+              "subject": "SUB33",
+              "n_windows": 114,
+              "positive_rate": 0.39473684210526316,
+              "auprc": 0.448618713730897
+            },
+            {
+              "subject": "SUB34",
+              "n_windows": 114,
+              "positive_rate": 0.24561403508771928,
+              "auprc": 0.6613579079371947
+            },
+            {
+              "subject": "SUB35",
+              "n_windows": 342,
+              "positive_rate": 0.0,
+              "auprc": null
+            }
+          ]
+        },
+        "early_warning_windows_with_fog_free_observation": {
+          "n_windows": 4231,
+          "positive_rate_and_random_auprc_baseline": 0.01630820137083432,
+          "auprc": 0.06542830806823675,
+          "definition": "windows whose 5-second observation contains no FOG flag"
+        },
+        "new_onset_operating_point": {
+          "threshold": 0.9,
+          "eligible_new_onsets": 55,
+          "detected_new_onsets": 2,
+          "new_onset_sensitivity": 0.03636363636363636,
+          "lead_time_s_median": 1.65234375,
+          "lead_time_s_mean": 1.65234375,
+          "lead_time_s_min": 1.625,
+          "lead_time_s_max": 1.6796875,
+          "false_alarms": 46,
+          "false_alarms_per_recording_hour": 27.058823529411764,
+          "false_alarms_per_non_fog_hour": 34.23631794189284,
+          "alarms_during_ongoing_fog_not_counted_as_false_alarms": 847,
+          "recorded_hours": 1.7,
+          "new_onset_event_auprc": 0.0610438296018469,
+          "new_onset_event_random_auprc_baseline": 0.01304244723737254,
+          "fog_free_negative_windows_in_event_auprc": 4162
+        },
+        "reliability_diagram_positive_probability": [
+          {
+            "bin": "0.0-0.1",
+            "n": 2904,
+            "mean_predicted_fog_probability": 0.027558575358358553,
+            "observed_fog_rate": 0.005853994490358127
+          },
+          {
+            "bin": "0.1-0.2",
+            "n": 599,
+            "mean_predicted_fog_probability": 0.14169006725509845,
+            "observed_fog_rate": 0.045075125208681135
+          },
+          {
+            "bin": "0.2-0.3",
+            "n": 335,
+            "mean_predicted_fog_probability": 0.24913579383151918,
+            "observed_fog_rate": 0.08059701492537313
+          },
+          {
+            "bin": "0.3-0.4",
+            "n": 197,
+            "mean_predicted_fog_probability": 0.3476251302933066,
+            "observed_fog_rate": 0.15736040609137056
+          },
+          {
+            "bin": "0.4-0.5",
+            "n": 174,
+            "mean_predicted_fog_probability": 0.4415357473539737,
+            "observed_fog_rate": 0.1839080459770115
+          },
+          {
+            "bin": "0.5-0.6",
+            "n": 152,
+            "mean_predicted_fog_probability": 0.5473995516286412,
+            "observed_fog_rate": 0.27631578947368424
+          },
+          {
+            "bin": "0.6-0.7",
+            "n": 154,
+            "mean_predicted_fog_probability": 0.652008332924617,
+            "observed_fog_rate": 0.37662337662337664
+          },
+          {
+            "bin": "0.7-0.8",
+            "n": 171,
+            "mean_predicted_fog_probability": 0.7563066178265236,
+            "observed_fog_rate": 0.47368421052631576
+          },
+          {
+            "bin": "0.8-0.9",
+            "n": 202,
+            "mean_predicted_fog_probability": 0.851702078687094,
+            "observed_fog_rate": 0.6534653465346535
+          },
+          {
+            "bin": "0.9-1.0",
+            "n": 926,
+            "mean_predicted_fog_probability": 0.974450569046229,
+            "observed_fog_rate": 0.9157667386609071
+          }
+        ]
+      },
+      "fixed_test": {
+        "split": "fixed_test",
+        "window_metrics": {
+          "n_windows": 2280,
+          "n_subjects": 9,
+          "n_positive": 378,
+          "positive_rate_and_random_auprc_baseline": 0.16578947368421051,
+          "auprc_average_precision": 0.5708123059723104,
+          "auroc": 0.8239767106749232,
+          "threshold_for_classification_metrics": 0.5,
+          "accuracy": 0.8254385964912281,
+          "balanced_accuracy": 0.7056565353095322,
+          "macro_f1": 0.6971307120085015,
+          "positive_precision": 0.47607655502392343,
+          "positive_recall_sensitivity": 0.5264550264550265,
+          "positive_f1": 0.5,
+          "specificity": 0.8848580441640379,
+          "confusion_matrix_tn_fp_fn_tp": [
+            1683,
+            219,
+            179,
+            199
+          ],
+          "nll": 0.3708632997928167,
+          "brier_score": 0.11815503706872965,
+          "brier_skill_score_vs_prevalence_baseline": 0.14568187107683328,
+          "ece_positive_probability_10_fixed_bins": 0.08013185263166396,
+          "ece_top_label_10_fixed_bins": 0.02094402441903578,
+          "risk_coverage": {
+            "aurc_trapezoid_lower_is_better": 0.05849794892826589,
+            "error_rate_at_coverage": {
+              "50_pct": 0.043859649122807015,
+              "80_pct": 0.10361842105263158,
+              "90_pct": 0.14083820662768032
+            },
+            "confidence_definition": "2 * abs(P(FOG) - 0.5); retain highest confidence first"
+          },
+          "subject_macro_auprc": 0.4785308985824435,
+          "subjects_with_both_classes_for_macro_auprc": 6,
+          "per_subject": [
+            {
+              "subject": "SUB09",
+              "n_windows": 228,
+              "positive_rate": 0.10087719298245613,
+              "auprc": 0.2531015346108295
+            },
+            {
+              "subject": "SUB13",
+              "n_windows": 114,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB14",
+              "n_windows": 342,
+              "positive_rate": 0.3128654970760234,
+              "auprc": 0.40774223355236905
+            },
+            {
+              "subject": "SUB16",
+              "n_windows": 228,
+              "positive_rate": 0.21052631578947367,
+              "auprc": 0.5707807685444168
+            },
+            {
+              "subject": "SUB20",
+              "n_windows": 342,
+              "positive_rate": 0.03216374269005848,
+              "auprc": 0.028845876507861537
+            },
+            {
+              "subject": "SUB22",
+              "n_windows": 114,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB25",
+              "n_windows": 342,
+              "positive_rate": 0.0,
+              "auprc": null
+            },
+            {
+              "subject": "SUB27",
+              "n_windows": 342,
+              "positive_rate": 0.3888888888888889,
+              "auprc": 0.7979178406454083
+            },
+            {
+              "subject": "SUB30",
+              "n_windows": 228,
+              "positive_rate": 0.24561403508771928,
+              "auprc": 0.8127971376337763
+            }
+          ]
+        },
+        "early_warning_windows_with_fog_free_observation": {
+          "n_windows": 1632,
+          "positive_rate_and_random_auprc_baseline": 0.04044117647058824,
+          "auprc": 0.08468320816005243,
+          "definition": "windows whose 5-second observation contains no FOG flag"
+        },
+        "new_onset_operating_point": {
+          "threshold": 0.9,
+          "eligible_new_onsets": 49,
+          "detected_new_onsets": 0,
+          "new_onset_sensitivity": 0.0,
+          "lead_time_s_median": null,
+          "lead_time_s_mean": null,
+          "lead_time_s_min": null,
+          "lead_time_s_max": null,
+          "false_alarms": 8,
+          "false_alarms_per_recording_hour": 12.0,
+          "false_alarms_per_non_fog_hour": 13.906010698091999,
+          "alarms_during_ongoing_fog_not_counted_as_false_alarms": 74,
+          "recorded_hours": 0.6666666666666666,
+          "new_onset_event_auprc": 0.06762103789693334,
+          "new_onset_event_random_auprc_baseline": 0.030340557275541795,
+          "fog_free_negative_windows_in_event_auprc": 1566
+        },
+        "reliability_diagram_positive_probability": [
+          {
+            "bin": "0.0-0.1",
+            "n": 1127,
+            "mean_predicted_fog_probability": 0.03600368323198891,
+            "observed_fog_rate": 0.04702750665483585
+          },
+          {
+            "bin": "0.1-0.2",
+            "n": 266,
+            "mean_predicted_fog_probability": 0.14518900810348886,
+            "observed_fog_rate": 0.13157894736842105
+          },
+          {
+            "bin": "0.2-0.3",
+            "n": 190,
+            "mean_predicted_fog_probability": 0.24815564970632178,
+            "observed_fog_rate": 0.15789473684210525
+          },
+          {
+            "bin": "0.3-0.4",
+            "n": 149,
+            "mean_predicted_fog_probability": 0.3487563792834556,
+            "observed_fog_rate": 0.2080536912751678
+          },
+          {
+            "bin": "0.4-0.5",
+            "n": 130,
+            "mean_predicted_fog_probability": 0.45049377153448933,
+            "observed_fog_rate": 0.23076923076923078
+          },
+          {
+            "bin": "0.5-0.6",
+            "n": 129,
+            "mean_predicted_fog_probability": 0.5479117297441168,
+            "observed_fog_rate": 0.2713178294573643
+          },
+          {
+            "bin": "0.6-0.7",
+            "n": 107,
+            "mean_predicted_fog_probability": 0.647138173956019,
+            "observed_fog_rate": 0.2897196261682243
+          },
+          {
+            "bin": "0.7-0.8",
+            "n": 54,
+            "mean_predicted_fog_probability": 0.7467584665583251,
+            "observed_fog_rate": 0.48148148148148145
+          },
+          {
+            "bin": "0.8-0.9",
+            "n": 42,
+            "mean_predicted_fog_probability": 0.8564728906158465,
+            "observed_fog_rate": 0.7380952380952381
+          },
+          {
+            "bin": "0.9-1.0",
+            "n": 86,
+            "mean_predicted_fog_probability": 0.962288584184854,
+            "observed_fog_rate": 0.8837209302325582
+          }
+        ],
+        "new_onset_threshold_grid": [
+          {
+            "threshold": 0.2,
+            "eligible_new_onsets": 49,
+            "detected_new_onsets": 29,
+            "new_onset_sensitivity": 0.5918367346938775,
+            "lead_time_s_median": 1.203125,
+            "lead_time_s_mean": 1.2271012931034482,
+            "lead_time_s_min": 0.3671875,
+            "lead_time_s_max": 1.953125,
+            "false_alarms": 328,
+            "false_alarms_per_recording_hour": 492.0,
+            "false_alarms_per_non_fog_hour": 570.146438621772,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 257,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.06762103789693334,
+            "new_onset_event_random_auprc_baseline": 0.030340557275541795,
+            "new_onset_events_in_auprc": 49,
+            "fog_free_negative_windows_in_event_auprc": 1566
+          },
+          {
+            "threshold": 0.3,
+            "eligible_new_onsets": 49,
+            "detected_new_onsets": 22,
+            "new_onset_sensitivity": 0.4489795918367347,
+            "lead_time_s_median": 1.37890625,
+            "lead_time_s_mean": 1.328125,
+            "lead_time_s_min": 0.453125,
+            "lead_time_s_max": 1.953125,
+            "false_alarms": 240,
+            "false_alarms_per_recording_hour": 360.0,
+            "false_alarms_per_non_fog_hour": 417.1803209427599,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 239,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.06762103789693334,
+            "new_onset_event_random_auprc_baseline": 0.030340557275541795,
+            "new_onset_events_in_auprc": 49,
+            "fog_free_negative_windows_in_event_auprc": 1566
+          },
+          {
+            "threshold": 0.5,
+            "eligible_new_onsets": 49,
+            "detected_new_onsets": 7,
+            "new_onset_sensitivity": 0.14285714285714285,
+            "lead_time_s_median": 1.1328125,
+            "lead_time_s_mean": 1.0758928571428572,
+            "lead_time_s_min": 0.0625,
+            "lead_time_s_max": 1.7265625,
+            "false_alarms": 129,
+            "false_alarms_per_recording_hour": 193.5,
+            "false_alarms_per_non_fog_hour": 224.23442250673347,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 196,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.06762103789693334,
+            "new_onset_event_random_auprc_baseline": 0.030340557275541795,
+            "new_onset_events_in_auprc": 49,
+            "fog_free_negative_windows_in_event_auprc": 1566
+          },
+          {
+            "threshold": 0.7,
+            "eligible_new_onsets": 49,
+            "detected_new_onsets": 1,
+            "new_onset_sensitivity": 0.02040816326530612,
+            "lead_time_s_median": 0.7265625,
+            "lead_time_s_mean": 0.7265625,
+            "lead_time_s_min": 0.7265625,
+            "lead_time_s_max": 0.7265625,
+            "false_alarms": 32,
+            "false_alarms_per_recording_hour": 48.0,
+            "false_alarms_per_non_fog_hour": 55.624042792367995,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 134,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.06762103789693334,
+            "new_onset_event_random_auprc_baseline": 0.030340557275541795,
+            "new_onset_events_in_auprc": 49,
+            "fog_free_negative_windows_in_event_auprc": 1566
+          },
+          {
+            "threshold": 0.9,
+            "eligible_new_onsets": 49,
+            "detected_new_onsets": 0,
+            "new_onset_sensitivity": 0.0,
+            "lead_time_s_median": null,
+            "lead_time_s_mean": null,
+            "lead_time_s_min": null,
+            "lead_time_s_max": null,
+            "false_alarms": 8,
+            "false_alarms_per_recording_hour": 12.0,
+            "false_alarms_per_non_fog_hour": 13.906010698091999,
+            "alarms_during_ongoing_fog_not_counted_as_false_alarms": 74,
+            "recorded_hours": 0.6666666666666666,
+            "new_onset_event_auprc": 0.06762103789693334,
+            "new_onset_event_random_auprc_baseline": 0.030340557275541795,
+            "new_onset_events_in_auprc": 49,
+            "fog_free_negative_windows_in_event_auprc": 1566
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "source": "dataset/doi-10.5683-sp3-twikmk.zip",
+  "doi": "10.5683/SP3/TWIKMK",
+  "name": "Care-PD, BMCLab cohort only",
+  "zip_status": "No central directory. Extractable complete motion file is BMCLab.pkl (781 walks, 23 subjects). The archive ends inside Canonicalized_SMPL_pickles/T-LTC_canonical.pkl, so the download is truncated.",
+  "what_this_is_not": "Not IMU windows and not future-FOG forecasting. Released data are anonymized SMPL gait meshes.",
+  "protocol": "Official 23-fold leave-one-subject-out from BMCLab_23fold_participants.pkl",
+  "model": "Class-balanced logistic regression on pose mean/std, pose-velocity mean/std, and translation speed. SMPL shape beta was not used.",
+  "fog_subject_level_freezer_vs_nonfreezer": {
+    "n_subjects": 23,
+    "positive_rate_and_random_auprc_baseline": 0.4782608695652174,
+    "auprc": 0.5832199187332326,
+    "auroc": 0.4621212121212121
+  },
+  "fog_walk_level_same_subject_label_repeated": {
+    "n_walks": 781,
+    "positive_rate_and_random_auprc_baseline": 0.4212548015364917,
+    "auprc": 0.4285233042154003,
+    "auroc": 0.4442666164564112
+  },
+  "updrs_gait_one_vs_rest": {
+    "class_0": {
+      "rate": 0.43661971830985913,
+      "auprc": 0.6797659676099318,
+      "auroc": 0.7784357504665422
+    },
+    "class_1": {
+      "rate": 0.353393085787452,
+      "auprc": 0.4960858881219685,
+      "auroc": 0.6785980771990242
+    },
+    "class_2": {
+      "rate": 0.20998719590268886,
+      "auprc": 0.3874856305023431,
+      "auroc": 0.6369529983792543
+    },
+    "binary_score_at_least_1": {
+      "rate": 0.5633802816901409,
+      "auprc": 0.8133344328046221,
+      "auroc": 0.7784357504665422
+    }
+  }
+}

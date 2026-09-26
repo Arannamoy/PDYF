@@ -1,0 +1,227 @@
+{
+  "zip": "dataset/doi-10.5683-sp3-twikmk.zip",
+  "doi": "10.5683/SP3/TWIKMK",
+  "zip_status": "Same 538 MB file as before. No central directory. Ends inside T-LTC_canonical.pkl. Missing 3DGait, E-LC, KUL-DT-T, and T-LTC motion files.",
+  "model": "logistic regression on pose mean/std, pose-velocity mean/std, and translation speed. Subject-disjoint.",
+  "cohorts": {
+    "BMCLab_freezer": {
+      "note": "subject-level freezer label, official 23-fold LOSO",
+      "walk_level": {
+        "n": 781,
+        "positive_rate_random_auprc": 0.4212548015364917,
+        "auprc": 0.4265051793828912,
+        "auroc": 0.4442800656319767
+      },
+      "subject_level": {
+        "n": 23,
+        "positive_rate_random_auprc": 0.4782608695652174,
+        "auprc": 0.5832199187332326,
+        "auroc": 0.4621212121212121
+      },
+      "subjects_scored": 23
+    },
+    "BMCLab_UPDRS_ge1": {
+      "note": "impaired gait vs normal, official LOSO",
+      "walk_level": {
+        "n": 781,
+        "positive_rate_random_auprc": 0.5633802816901409,
+        "auprc": 0.8243701696881454,
+        "auroc": 0.773367102106105
+      },
+      "subject_level": {
+        "n": 23,
+        "positive_rate_random_auprc": 0.6956521739130435,
+        "auprc": 0.9022245846259004,
+        "auroc": 0.7678571428571429
+      },
+      "subjects_scored": 23
+    },
+    "PD-GaM_UPDRS": {
+      "class_0_vs_rest": {
+        "note": "one versus rest",
+        "walk_level": {
+          "n": 1701,
+          "positive_rate_random_auprc": 0.4603174603174603,
+          "auprc": 0.8210521554790158,
+          "auroc": 0.8767880644524021
+        },
+        "subject_level": {
+          "n": 30,
+          "positive_rate_random_auprc": 0.13333333333333333,
+          "auprc": 0.5861111111111111,
+          "auroc": 0.8942307692307693
+        },
+        "subjects_scored": 30
+      },
+      "class_1_vs_rest": {
+        "note": "one versus rest",
+        "walk_level": {
+          "n": 1701,
+          "positive_rate_random_auprc": 0.3733098177542622,
+          "auprc": 0.5502403488625114,
+          "auroc": 0.7124418312626495
+        },
+        "subject_level": {
+          "n": 30,
+          "positive_rate_random_auprc": 0.4,
+          "auprc": 0.751452040310736,
+          "auroc": 0.8101851851851851
+        },
+        "subjects_scored": 30
+      },
+      "class_2_vs_rest": {
+        "note": "one versus rest",
+        "walk_level": {
+          "n": 1701,
+          "positive_rate_random_auprc": 0.1457965902410347,
+          "auprc": 0.5100778599245573,
+          "auroc": 0.8271068756521547
+        },
+        "subject_level": {
+          "n": 30,
+          "positive_rate_random_auprc": 0.43333333333333335,
+          "auprc": 0.6727793573947418,
+          "auroc": 0.7647058823529411
+        },
+        "subjects_scored": 30
+      },
+      "class_3_vs_rest": {
+        "note": "one versus rest",
+        "walk_level": {
+          "n": 1701,
+          "positive_rate_random_auprc": 0.0205761316872428,
+          "auprc": 0.7302051751810262,
+          "auroc": 0.9586177328074087
+        },
+        "subject_level": {
+          "n": 30,
+          "positive_rate_random_auprc": 0.03333333333333333,
+          "auprc": 0.5,
+          "auroc": 0.9655172413793104
+        },
+        "subjects_scored": 30
+      },
+      "score_at_least_1": {
+        "note": "impaired vs score 0",
+        "walk_level": {
+          "n": 1701,
+          "positive_rate_random_auprc": 0.5396825396825397,
+          "auprc": 0.9086968869825479,
+          "auroc": 0.8767880644524022
+        },
+        "subject_level": {
+          "n": 30,
+          "positive_rate_random_auprc": 0.8666666666666667,
+          "auprc": 0.984352031859528,
+          "auroc": 0.8942307692307692
+        },
+        "subjects_scored": 30
+      }
+    },
+    "T-SDU-PD_UPDRS": {
+      "class_0_vs_rest": {
+        "note": "one versus rest",
+        "walk_level": {
+          "n": 381,
+          "positive_rate_random_auprc": 0.25196850393700787,
+          "auprc": 0.5588527565255894,
+          "auroc": 0.7828947368421052
+        },
+        "subject_level": {
+          "n": 14,
+          "positive_rate_random_auprc": 0.14285714285714285,
+          "auprc": 0.75,
+          "auroc": 0.9166666666666667
+        },
+        "subjects_scored": 14
+      },
+      "class_1_vs_rest": {
+        "note": "one versus rest",
+        "walk_level": {
+          "n": 381,
+          "positive_rate_random_auprc": 0.30971128608923887,
+          "auprc": 0.26047753761281867,
+          "auroc": 0.41467422826577305
+        },
+        "subject_level": {
+          "n": 14,
+          "positive_rate_random_auprc": 0.5714285714285714,
+          "auprc": 0.6790990259740259,
+          "auroc": 0.5625
+        },
+        "subjects_scored": 14
+      },
+      "class_2_vs_rest": {
+        "note": "one versus rest",
+        "walk_level": {
+          "n": 381,
+          "positive_rate_random_auprc": 0.43832020997375326,
+          "auprc": 0.5694677550640034,
+          "auroc": 0.6730930662040404
+        },
+        "subject_level": {
+          "n": 14,
+          "positive_rate_random_auprc": 0.2857142857142857,
+          "auprc": 0.8875,
+          "auroc": 0.9500000000000001
+        },
+        "subjects_scored": 14
+      },
+      "score_at_least_1": {
+        "note": "impaired vs score 0",
+        "walk_level": {
+          "n": 381,
+          "positive_rate_random_auprc": 0.7480314960629921,
+          "auprc": 0.9115415675053181,
+          "auroc": 0.7828947368421053
+        },
+        "subject_level": {
+          "n": 14,
+          "positive_rate_random_auprc": 0.8571428571428571,
+          "auprc": 0.9866452991452993,
+          "auroc": 0.9166666666666667
+        },
+        "subjects_scored": 14
+      }
+    },
+    "DNE_parkinson_vs_rest": {
+      "note": "5-fold subject GroupKFold; no official fold file in this zip",
+      "walk_level": {
+        "n": 476,
+        "positive_rate_random_auprc": 0.24579831932773108,
+        "auprc": 0.4749649759686552,
+        "auroc": 0.7229721686546199
+      },
+      "subject_level": {
+        "n": 97,
+        "positive_rate_random_auprc": 0.30927835051546393,
+        "auprc": 0.5436092788043955,
+        "auroc": 0.698507462686567
+      },
+      "subjects_scored": 97
+    },
+    "DNE_parkinson_vs_healthy": {
+      "note": "other-diseases excluded; 5-fold subject GroupKFold",
+      "walk_level": {
+        "n": 322,
+        "positive_rate_random_auprc": 0.36335403726708076,
+        "auprc": 0.8703333818722732,
+        "auroc": 0.9317490097977903
+      },
+      "subject_level": {
+        "n": 58,
+        "positive_rate_random_auprc": 0.5172413793103449,
+        "auprc": 0.9669093255638437,
+        "auroc": 0.9654761904761906
+      },
+      "subjects_scored": 58
+    }
+  },
+  "unscored": {
+    "T-SDU.pkl": "2798 walks, UPDRS and other are all missing",
+    "3DGait": "fold file only; motion pickle not in this zip",
+    "KUL-DT-T": "fold file only; motion pickle not in this zip",
+    "E-LC": "not present",
+    "T-LTC": "file truncated"
+  }
+}

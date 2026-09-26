@@ -1,0 +1,47 @@
+{
+  "dataset": "KOA-PD-NM, Parkinson and healthy videos only",
+  "excluded": "All knee-osteoarthritis videos were excluded.",
+  "archive_note": "002_PD_01_SV.MOV was corrupt and excluded. Two other severe-PD videos named in the README are not in the archive.",
+  "model": "Frozen DINOv2 ViT-S/14, mean of up to 6 frames, logistic head, subject-grouped out-of-fold scores.",
+  "counts": {
+    "NM_none": 59,
+    "PD_MD": 14,
+    "PD_SV": 2,
+    "PD_ML": 12
+  },
+  "tasks": {
+    "Parkinson_vs_healthy": {
+      "n_videos": 87,
+      "n_subjects": 44,
+      "positive_videos": 28,
+      "positive_rate_random_auprc": 0.3218390804597701,
+      "auprc": 0.9872328380740504,
+      "auroc": 0.9933414043583535
+    },
+    "mild_vs_other_Parkinson": {
+      "n_videos": 28,
+      "n_subjects": 14,
+      "positive_videos": 12,
+      "positive_rate_random_auprc": 0.42857142857142855,
+      "auprc": 0.5054722672657455,
+      "auroc": 0.421875
+    },
+    "moderate_vs_other_Parkinson": {
+      "n_videos": 28,
+      "n_subjects": 14,
+      "positive_videos": 14,
+      "positive_rate_random_auprc": 0.5,
+      "auprc": 0.416522428617476,
+      "auroc": 0.34183673469387754
+    },
+    "severe_vs_other_Parkinson": null,
+    "moderate_or_severe_vs_mild": {
+      "n_videos": 28,
+      "n_subjects": 14,
+      "positive_videos": 16,
+      "positive_rate_random_auprc": 0.5714285714285714,
+      "auprc": 0.5640980241164065,
+      "auroc": 0.421875
+    }
+  }
+}

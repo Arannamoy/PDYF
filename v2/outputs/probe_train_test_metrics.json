@@ -1,0 +1,360 @@
+{
+  "model": "logistic regression on 18 spectral features",
+  "C": 0.5,
+  "task": "5.0-second IMU observation; 2.0-second future window; positive if at least 30% of future samples have FOG",
+  "split_note": "Fixed subject split previously examined during development; these are development metrics, not an untouched final test estimate.",
+  "train_fit_pool_in_sample": {
+    "definition": "final refit on original train plus validation participants; resubstitution score",
+    "n_windows": 5814,
+    "n_subjects": 26,
+    "n_positive": 1295,
+    "positive_rate_and_random_auprc_baseline": 0.22273821809425526,
+    "auprc_average_precision": 0.9012741316535469,
+    "auroc": 0.9631935858977239,
+    "threshold_for_classification_metrics": 0.5,
+    "accuracy": 0.9005847953216374,
+    "balanced_accuracy": 0.899136635449979,
+    "macro_f1": 0.8672330035715414,
+    "positive_precision": 0.7233644859813084,
+    "positive_recall_sensitivity": 0.8965250965250965,
+    "positive_f1": 0.8006896551724138,
+    "specificity": 0.9017481743748617,
+    "confusion_matrix_tn_fp_fn_tp": [
+      4075,
+      444,
+      134,
+      1161
+    ],
+    "nll": 0.24654549812942209,
+    "brier_score": 0.07346985344701883,
+    "brier_skill_score_vs_prevalence_baseline": 0.5756276119022498,
+    "ece_positive_probability_10_fixed_bins": 0.08359129830844343,
+    "ece_top_label_10_fixed_bins": 0.00743018341498931,
+    "risk_coverage": {
+      "aurc_trapezoid_lower_is_better": 0.024166407445057263,
+      "error_rate_at_coverage": {
+        "50_pct": 0.01479188166494668,
+        "80_pct": 0.04213241616509028,
+        "90_pct": 0.06439900630613415
+      },
+      "confidence_definition": "2 * abs(P(FOG) - 0.5); retain highest confidence first"
+    },
+    "subject_macro_auprc": 0.4635004737423685,
+    "subjects_with_both_classes_for_macro_auprc": 20,
+    "per_subject": [
+      {
+        "subject": "SUB01",
+        "n_windows": 228,
+        "positive_rate": 0.9824561403508771,
+        "auprc": 0.9986194450284738
+      },
+      {
+        "subject": "SUB02",
+        "n_windows": 114,
+        "positive_rate": 0.9122807017543859,
+        "auprc": 0.9693134206110938
+      },
+      {
+        "subject": "SUB03",
+        "n_windows": 342,
+        "positive_rate": 0.014619883040935672,
+        "auprc": 0.044357393953047414
+      },
+      {
+        "subject": "SUB04",
+        "n_windows": 114,
+        "positive_rate": 0.20175438596491227,
+        "auprc": 0.27892788437363936
+      },
+      {
+        "subject": "SUB05",
+        "n_windows": 228,
+        "positive_rate": 0.13157894736842105,
+        "auprc": 0.17592561783041932
+      },
+      {
+        "subject": "SUB06",
+        "n_windows": 228,
+        "positive_rate": 0.013157894736842105,
+        "auprc": 0.050711725550435224
+      },
+      {
+        "subject": "SUB07",
+        "n_windows": 342,
+        "positive_rate": 0.9883040935672515,
+        "auprc": 0.9942953924900899
+      },
+      {
+        "subject": "SUB08",
+        "n_windows": 114,
+        "positive_rate": 0.7543859649122807,
+        "auprc": 0.8560392752259507
+      },
+      {
+        "subject": "SUB10",
+        "n_windows": 228,
+        "positive_rate": 0.0,
+        "auprc": null
+      },
+      {
+        "subject": "SUB11",
+        "n_windows": 228,
+        "positive_rate": 0.14473684210526316,
+        "auprc": 0.8446975424600607
+      },
+      {
+        "subject": "SUB12",
+        "n_windows": 114,
+        "positive_rate": 0.0,
+        "auprc": null
+      },
+      {
+        "subject": "SUB15",
+        "n_windows": 114,
+        "positive_rate": 0.043859649122807015,
+        "auprc": 0.06233347611908332
+      },
+      {
+        "subject": "SUB17",
+        "n_windows": 114,
+        "positive_rate": 0.0,
+        "auprc": null
+      },
+      {
+        "subject": "SUB18",
+        "n_windows": 342,
+        "positive_rate": 0.029239766081871343,
+        "auprc": 0.3777232571548323
+      },
+      {
+        "subject": "SUB19",
+        "n_windows": 228,
+        "positive_rate": 0.9868421052631579,
+        "auprc": 0.9844750839342357
+      },
+      {
+        "subject": "SUB21",
+        "n_windows": 342,
+        "positive_rate": 0.04093567251461988,
+        "auprc": 0.19243029948526658
+      },
+      {
+        "subject": "SUB23",
+        "n_windows": 228,
+        "positive_rate": 0.05701754385964912,
+        "auprc": 0.31796994430679276
+      },
+      {
+        "subject": "SUB24",
+        "n_windows": 114,
+        "positive_rate": 0.2807017543859649,
+        "auprc": 0.3071797834295859
+      },
+      {
+        "subject": "SUB26",
+        "n_windows": 342,
+        "positive_rate": 0.0,
+        "auprc": null
+      },
+      {
+        "subject": "SUB28",
+        "n_windows": 342,
+        "positive_rate": 0.0,
+        "auprc": null
+      },
+      {
+        "subject": "SUB29",
+        "n_windows": 114,
+        "positive_rate": 0.4649122807017544,
+        "auprc": 0.5349612212658408
+      },
+      {
+        "subject": "SUB31",
+        "n_windows": 342,
+        "positive_rate": 0.06140350877192982,
+        "auprc": 0.12845629834463915
+      },
+      {
+        "subject": "SUB32",
+        "n_windows": 342,
+        "positive_rate": 0.008771929824561403,
+        "auprc": 0.04161579161579161
+      },
+      {
+        "subject": "SUB33",
+        "n_windows": 114,
+        "positive_rate": 0.39473684210526316,
+        "auprc": 0.448618713730897
+      },
+      {
+        "subject": "SUB34",
+        "n_windows": 114,
+        "positive_rate": 0.24561403508771928,
+        "auprc": 0.6613579079371947
+      },
+      {
+        "subject": "SUB35",
+        "n_windows": 342,
+        "positive_rate": 0.0,
+        "auprc": null
+      }
+    ]
+  },
+  "grouped_cv_on_fit_pool": {
+    "definition": "5-fold subject-grouped CV; C was selected using these same folds",
+    "fold_auprc": [
+      0.8026998516679914,
+      0.36605491725144246,
+      0.9665713381484442,
+      0.4377963747498266,
+      0.9278707403818801
+    ],
+    "fold_mean_auprc": 0.700198644439917,
+    "fold_std_auprc_population": 0.2505204479739219,
+    "fold_mean_metrics": {
+      "positive_rate_and_random_auprc_baseline": 0.22433811802232856,
+      "auprc_average_precision": 0.700198644439917,
+      "auroc": 0.9323448021575784,
+      "accuracy": 0.8766028708133972,
+      "balanced_accuracy": 0.8390048056352504,
+      "macro_f1": 0.792679436826962,
+      "positive_precision": 0.5908048445687909,
+      "positive_recall_sensitivity": 0.801675999099106,
+      "positive_f1": 0.6724472916853463,
+      "specificity": 0.8763336121713945,
+      "nll": 0.3020369249691222,
+      "brier_score": 0.08986750572210492,
+      "brier_skill_score_vs_prevalence_baseline": 0.24354203209011988,
+      "ece_positive_probability_10_fixed_bins": 0.0910209840002578,
+      "ece_top_label_10_fixed_bins": 0.033918826125982994,
+      "risk_coverage": {
+        "aurc_trapezoid_lower_is_better": 0.03929528339088565,
+        "error_rate_at_coverage": {
+          "50_pct": 0.032663476874003186,
+          "80_pct": 0.06426224924861956,
+          "90_pct": 0.09169856537811412
+        }
+      }
+    },
+    "out_of_fold_subject_macro_auprc": 0.4489641611146545,
+    "subjects_with_both_classes_for_macro_auprc": 20,
+    "cross_fold_pooled_ranking_note": "AUPRC/AUROC are reported as the mean of fold scores, not by pooling probabilities from different fold models."
+  },
+  "fixed_test": {
+    "definition": "held-out participants; metrics computed after model selection",
+    "n_windows": 2280,
+    "n_subjects": 9,
+    "n_positive": 378,
+    "positive_rate_and_random_auprc_baseline": 0.16578947368421051,
+    "auprc_average_precision": 0.5708123059723104,
+    "auroc": 0.8239767106749232,
+    "threshold_for_classification_metrics": 0.5,
+    "accuracy": 0.8254385964912281,
+    "balanced_accuracy": 0.7056565353095322,
+    "macro_f1": 0.6971307120085015,
+    "positive_precision": 0.47607655502392343,
+    "positive_recall_sensitivity": 0.5264550264550265,
+    "positive_f1": 0.5,
+    "specificity": 0.8848580441640379,
+    "confusion_matrix_tn_fp_fn_tp": [
+      1683,
+      219,
+      179,
+      199
+    ],
+    "nll": 0.3708632997928167,
+    "brier_score": 0.11815503706872965,
+    "brier_skill_score_vs_prevalence_baseline": 0.14568187107683328,
+    "ece_positive_probability_10_fixed_bins": 0.08013185263166396,
+    "ece_top_label_10_fixed_bins": 0.02094402441903578,
+    "risk_coverage": {
+      "aurc_trapezoid_lower_is_better": 0.05849794892826589,
+      "error_rate_at_coverage": {
+        "50_pct": 0.043859649122807015,
+        "80_pct": 0.10361842105263158,
+        "90_pct": 0.14083820662768032
+      },
+      "confidence_definition": "2 * abs(P(FOG) - 0.5); retain highest confidence first"
+    },
+    "subject_macro_auprc": 0.4785308985824435,
+    "subjects_with_both_classes_for_macro_auprc": 6,
+    "per_subject": [
+      {
+        "subject": "SUB09",
+        "n_windows": 228,
+        "positive_rate": 0.10087719298245613,
+        "auprc": 0.2531015346108295
+      },
+      {
+        "subject": "SUB13",
+        "n_windows": 114,
+        "positive_rate": 0.0,
+        "auprc": null
+      },
+      {
+        "subject": "SUB14",
+        "n_windows": 342,
+        "positive_rate": 0.3128654970760234,
+        "auprc": 0.40774223355236905
+      },
+      {
+        "subject": "SUB16",
+        "n_windows": 228,
+        "positive_rate": 0.21052631578947367,
+        "auprc": 0.5707807685444168
+      },
+      {
+        "subject": "SUB20",
+        "n_windows": 342,
+        "positive_rate": 0.03216374269005848,
+        "auprc": 0.028845876507861537
+      },
+      {
+        "subject": "SUB22",
+        "n_windows": 114,
+        "positive_rate": 0.0,
+        "auprc": null
+      },
+      {
+        "subject": "SUB25",
+        "n_windows": 342,
+        "positive_rate": 0.0,
+        "auprc": null
+      },
+      {
+        "subject": "SUB27",
+        "n_windows": 342,
+        "positive_rate": 0.3888888888888889,
+        "auprc": 0.7979178406454083
+      },
+      {
+        "subject": "SUB30",
+        "n_windows": 228,
+        "positive_rate": 0.24561403508771928,
+        "auprc": 0.8127971376337763
+      }
+    ]
+  },
+  "test_participant_cluster_bootstrap": {
+    "method": "percentile bootstrap resampling participants with replacement",
+    "replicates": 10000,
+    "seed": 20260926,
+    "pooled_auprc_95pct_ci": [
+      0.20489450901382184,
+      0.7335385455643625
+    ],
+    "pooled_valid_replicates": 9999,
+    "subject_macro_auprc_95pct_ci": [
+      0.23175241144845846,
+      0.7078135873663325
+    ],
+    "subject_macro_valid_replicates": 9999,
+    "caveat": "only nine test participants; intervals are consequently uncertain"
+  },
+  "not_evaluated_or_not_supported_by_current_setup": {
+    "event_level_auprc_sensitivity_false_alarms_per_hour_and_lead_time": "Not reported: the target is an overlapping future-window label, not a new-onset event definition with alarm aggregation.",
+    "other_forecast_horizons": "Not evaluated; this model was trained for one 2-second horizon.",
+    "missing_modality_and_cross_modal_agreement": "Not applicable: this benchmark has an IMU input only and no video branch.",
+    "corruption_robustness": "Not evaluated under a prespecified corruption protocol."
+  }
+}
