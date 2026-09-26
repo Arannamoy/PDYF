@@ -1,0 +1,84 @@
+windows=(8094, 640, 6) fog_rate=0.2067 subjects=35
+count     35.000000
+mean     231.257143
+std       97.698318
+min      114.000000
+25%      114.000000
+50%      228.000000
+75%      342.000000
+max      342.000000
+fixed test: n=2280 subjects=['SUB09', 'SUB13', 'SUB14', 'SUB16', 'SUB20', 'SUB22', 'SUB25', 'SUB27', 'SUB30']
+[seed 42] train_n=4104 val_n=1710 counts=[3211.0, 893.0] FocalLoss
+[seed 42] ep 01 train_loss=0.0474 val_nll=0.3834 val_f1=0.9373 val_auprc=0.9499
+[seed 42] ep 02 train_loss=0.0309 val_nll=0.2957 val_f1=0.6991 val_auprc=0.9579
+[seed 42] ep 03 train_loss=0.0259 val_nll=0.2671 val_f1=0.8429 val_auprc=0.8978
+[seed 42] ep 04 train_loss=0.0229 val_nll=0.3054 val_f1=0.5721 val_auprc=0.9669
+[seed 42] ep 05 train_loss=0.0241 val_nll=0.1884 val_f1=0.9263 val_auprc=0.9678
+[seed 42] ep 06 train_loss=0.0137 val_nll=0.2121 val_f1=0.9212 val_auprc=0.9335
+[seed 42] ep 07 train_loss=0.0128 val_nll=0.2155 val_f1=0.8674 val_auprc=0.9464
+[seed 42] ep 08 train_loss=0.0128 val_nll=0.2161 val_f1=0.8518 val_auprc=0.9569
+[seed 42] ep 09 train_loss=0.0106 val_nll=0.2038 val_f1=0.8684 val_auprc=0.9454
+[seed 42] ep 10 train_loss=0.0071 val_nll=0.2547 val_f1=0.7736 val_auprc=0.9324
+[seed 42] ep 11 train_loss=0.0088 val_nll=0.2527 val_f1=0.7753 val_auprc=0.9500
+[seed 42] ep 12 train_loss=0.0054 val_nll=0.2680 val_f1=0.7619 val_auprc=0.9280
+[seed 42] ep 13 train_loss=0.0058 val_nll=0.2466 val_f1=0.7981 val_auprc=0.9217
+[seed 42] ep 14 train_loss=0.0057 val_nll=0.2284 val_f1=0.8576 val_auprc=0.8938
+[seed 42] ep 15 train_loss=0.0046 val_nll=0.2771 val_f1=0.7494 val_auprc=0.8976
+[seed 42] ep 16 train_loss=0.0040 val_nll=0.3663 val_f1=0.7979 val_auprc=0.9078
+[seed 42] ep 17 train_loss=0.0233 val_nll=0.3183 val_f1=0.8893 val_auprc=0.9588
+[seed 42] early stop at ep 17 (best auprc=0.9678)
+[seed 43] train_n=4104 val_n=1710 counts=[3203.0, 901.0] FocalLoss
+[seed 43] ep 01 train_loss=0.0527 val_nll=0.4580 val_f1=0.9004 val_auprc=0.9309
+[seed 43] ep 02 train_loss=0.0330 val_nll=0.2882 val_f1=0.8430 val_auprc=0.9160
+[seed 43] ep 03 train_loss=0.0292 val_nll=0.2666 val_f1=0.9017 val_auprc=0.9677
+[seed 43] ep 04 train_loss=0.0219 val_nll=0.2429 val_f1=0.8131 val_auprc=0.9301
+[seed 43] ep 05 train_loss=0.0182 val_nll=0.1972 val_f1=0.9293 val_auprc=0.9465
+[seed 43] ep 06 train_loss=0.0192 val_nll=0.2442 val_f1=0.8042 val_auprc=0.9441
+[seed 43] ep 07 train_loss=0.0170 val_nll=0.2050 val_f1=0.8731 val_auprc=0.9436
+[seed 43] ep 08 train_loss=0.0105 val_nll=0.2309 val_f1=0.8130 val_auprc=0.9053
+[seed 43] ep 09 train_loss=0.0116 val_nll=0.2064 val_f1=0.8936 val_auprc=0.9131
+[seed 43] ep 10 train_loss=0.0074 val_nll=0.3297 val_f1=0.5916 val_auprc=0.9236
+[seed 43] ep 11 train_loss=0.0303 val_nll=0.2208 val_f1=0.9296 val_auprc=0.9523
+[seed 43] ep 12 train_loss=0.0148 val_nll=0.2408 val_f1=0.7898 val_auprc=0.9260
+[seed 43] ep 13 train_loss=0.0131 val_nll=0.1937 val_f1=0.8947 val_auprc=0.9255
+[seed 43] ep 14 train_loss=0.0084 val_nll=0.2451 val_f1=0.7586 val_auprc=0.9226
+[seed 43] ep 15 train_loss=0.0103 val_nll=0.2069 val_f1=0.8802 val_auprc=0.8915
+[seed 43] early stop at ep 15 (best auprc=0.9677)
+[seed 44] train_n=4104 val_n=1710 counts=[3185.0, 919.0] FocalLoss
+[seed 44] ep 01 train_loss=0.0476 val_nll=0.3989 val_f1=0.9037 val_auprc=0.9147
+[seed 44] ep 02 train_loss=0.0308 val_nll=0.2947 val_f1=0.8224 val_auprc=0.9595
+[seed 44] ep 03 train_loss=0.0257 val_nll=0.2485 val_f1=0.7860 val_auprc=0.9604
+[seed 44] ep 04 train_loss=0.0339 val_nll=0.7466 val_f1=0.4392 val_auprc=0.9628
+[seed 44] ep 05 train_loss=0.0336 val_nll=0.2276 val_f1=0.9297 val_auprc=0.9536
+[seed 44] ep 06 train_loss=0.0205 val_nll=0.2358 val_f1=0.9239 val_auprc=0.9690
+[seed 44] ep 07 train_loss=0.0155 val_nll=0.2322 val_f1=0.9199 val_auprc=0.9651
+[seed 44] ep 08 train_loss=0.0145 val_nll=0.2283 val_f1=0.9187 val_auprc=0.9578
+[seed 44] ep 09 train_loss=0.0103 val_nll=0.4946 val_f1=0.6560 val_auprc=0.9596
+[seed 44] ep 10 train_loss=0.0212 val_nll=0.2220 val_f1=0.9277 val_auprc=0.9602
+[seed 44] ep 11 train_loss=0.0137 val_nll=0.1545 val_f1=0.9511 val_auprc=0.9610
+[seed 44] ep 12 train_loss=0.0114 val_nll=0.1844 val_f1=0.9326 val_auprc=0.9506
+[seed 44] ep 13 train_loss=0.0126 val_nll=0.1907 val_f1=0.9332 val_auprc=0.9518
+[seed 44] ep 14 train_loss=0.0085 val_nll=0.1922 val_f1=0.9257 val_auprc=0.9472
+[seed 44] ep 15 train_loss=0.0065 val_nll=0.1420 val_f1=0.9324 val_auprc=0.9487
+[seed 44] ep 16 train_loss=0.0089 val_nll=0.2304 val_f1=0.9185 val_auprc=0.9570
+[seed 44] ep 17 train_loss=0.0066 val_nll=0.1422 val_f1=0.9388 val_auprc=0.9608
+[seed 44] ep 18 train_loss=0.0081 val_nll=0.1457 val_f1=0.9392 val_auprc=0.9599
+[seed 44] early stop at ep 18 (best auprc=0.9690)
+VAL: {
+  "nll": 0.23026768430399383,
+  "acc": 0.9438596491228072,
+  "bal_acc": 0.906549810916423,
+  "macro_f1": 0.9173205161641061,
+  "auprc": 0.9681560259245326,
+  "brier": 0.058083069821198784,
+  "ece": 0.10066619761738398
+}
+TEST: {
+  "nll": 0.4433536231517792,
+  "acc": 0.8105263157894737,
+  "bal_acc": 0.6596231201909435,
+  "macro_f1": 0.6589473684210526,
+  "auprc": 0.4938253741801492,
+  "brier": 0.13884828984737396,
+  "ece": 0.0772138695706401
+}

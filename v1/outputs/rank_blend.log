@@ -1,0 +1,45 @@
+fit time_stats::catboost_d6_l210
+fit time_stats::xgboost_d4_r10
+fit time_stats::xgboost_d2_r5
+fit time_stats::hist_gb_l10_lr0.05
+fit all::hist_gb_l10_lr0.05
+{
+  "blend": {
+    "models": [
+      "time_stats::catboost_d6_l210",
+      "time_stats::xgboost_d4_r10",
+      "time_stats::xgboost_d2_r5",
+      "time_stats::hist_gb_l10_lr0.05",
+      "all::hist_gb_l10_lr0.05"
+    ],
+    "cv_auprc": 0.8947168439446112,
+    "cv_subject_macro_auprc": 0.4769743991737713,
+    "cv_subjects": 20
+  },
+  "test_auprc": 0.5707443559671445,
+  "test_positive_rate": 0.16578947368421051,
+  "test_subjects": [
+    "SUB09",
+    "SUB13",
+    "SUB14",
+    "SUB16",
+    "SUB20",
+    "SUB22",
+    "SUB25",
+    "SUB27",
+    "SUB30"
+  ],
+  "test_per_subject_auprc": {
+    "SUB09": 0.23499101143593892,
+    "SUB13": null,
+    "SUB14": 0.4162710060431694,
+    "SUB16": 0.6016703252817456,
+    "SUB20": 0.035922727285908465,
+    "SUB22": null,
+    "SUB25": null,
+    "SUB27": 0.8272149141261287,
+    "SUB30": 0.8138545001150104
+  },
+  "test_rank_normalization": "within unlabeled test batch, per component",
+  "test_evaluated_once_after_cv_selection": true
+}

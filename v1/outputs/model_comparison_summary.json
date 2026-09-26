@@ -1,0 +1,53 @@
+{
+  "task": "2-second binary future FOG forecasting from 5-second IMU windows",
+  "fixed_test_subjects": [
+    "SUB09", "SUB13", "SUB14", "SUB16", "SUB20",
+    "SUB22", "SUB25", "SUB27", "SUB30"
+  ],
+  "best_observed_test_candidate": {
+    "name": "Logistic regression on 18 spectral features",
+    "test_auprc": 0.5708123059723104,
+    "grouped_cv_auprc": 0.700198644439917,
+    "best_C": 0.5,
+    "artifact": "outputs/spectral_probe.npz",
+    "metrics": "outputs/metrics_probe.json",
+    "inference_note": "sample-wise scoring; no test-cohort rank normalization"
+  },
+  "comparisons": [
+    {
+      "name": "Original PatchTST baseline",
+      "test_auprc": 0.5004399040422177,
+      "artifact": "outputs/metrics_baseline.json"
+    },
+    {
+      "name": "PatchTST 3-seed focal ensemble with instance norm",
+      "test_auprc": 0.47742298194489324,
+      "artifact": "outputs/train_ensemble.log"
+    },
+    {
+      "name": "GPU spectral-feature MLP",
+      "grouped_cv_auprc": 0.749550044801758,
+      "test_auprc": 0.5255473933405861,
+      "device": "NVIDIA GeForce RTX 3060",
+      "artifact": "outputs/neural_benchmark.json",
+      "weights": "outputs/neural_best.pt"
+    },
+    {
+      "name": "CatBoost on time-domain features (best single by grouped CV)",
+      "grouped_cv_auprc": 0.8855064870750148,
+      "test_auprc": 0.5533451327793686,
+      "device": "GPU during grouped-CV benchmark",
+      "artifact": "outputs/model_benchmark_test.json"
+    },
+    {
+      "name": "Top-five CatBoost/XGBoost/HistGradientBoosting rank blend",
+      "grouped_cv_auprc": 0.8947168439446112,
+      "test_auprc": 0.5707443559671445,
+      "test_rank_normalization": "within unlabeled test batch, per component",
+      "artifact": "outputs/model_benchmark_blend_test.json"
+    }
+  ],
+  "absolute_improvement_over_original_test_auprc": 0.0703724018440927,
+  "interpretation": "The spectral logistic probe and rank blend are effectively tied on this fixed split. Prefer the logistic probe for simple sample-wise inference and calibration; the rank blend requires cohort-level unlabeled rank normalization.",
+  "important_evaluation_caveat": "This participant split was inspected repeatedly during model development in the session. These are development results, not an untouched final test estimate. Freeze the pipeline and report a new held-out participant split or nested grouped CV before making a final generalization claim."
+}

@@ -1,0 +1,37 @@
+[project]
+name = "fydp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Arannamoy Mondal", email = "arannamoymondal13@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "torch",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "pyyaml",
+    "omegaconf",
+    "hydra-core"
+]
+
+[project.scripts]
+fydp-imu = "fydp.train_imu:main"
+fydp-probe = "fydp.train_probe:main"
+fydp-bench = "fydp.benchmark_models:run"
+fydp-bench-neural = "fydp.benchmark_neural:run"
+fydp-eval-blend = "fydp.evaluate_rank_blend:main"
+fydp-eval-probe = "fydp.evaluate_probe_metrics:main"
+fydp-eval-imu = "fydp.evaluate_imu_research_metrics:main"
+
+[project.optional-dependencies]
+benchmark = ["xgboost", "catboost"]
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,35 @@
+{
+  "winner_by_grouped_cv": {
+    "feature": "time_stats",
+    "model": "catboost_d6_l210",
+    "cv_auprc": 0.8855064870750148,
+    "cv_subject_macro_auprc": 0.48797407315074937,
+    "cv_subjects_with_both_classes": 20
+  },
+  "test_auprc": 0.5533451327793686,
+  "test_positive_rate": 0.16578947368421051,
+  "test_subjects": [
+    "SUB09",
+    "SUB13",
+    "SUB14",
+    "SUB16",
+    "SUB20",
+    "SUB22",
+    "SUB25",
+    "SUB27",
+    "SUB30"
+  ],
+  "test_per_subject_auprc": {
+    "SUB09": 0.24166675457925013,
+    "SUB13": null,
+    "SUB14": 0.39917135171159346,
+    "SUB16": 0.556453199654171,
+    "SUB20": 0.037586612961395365,
+    "SUB22": null,
+    "SUB25": null,
+    "SUB27": 0.7980761693154894,
+    "SUB30": 0.8054537677187277
+  },
+  "test_evaluated_once_within_this_run": true,
+  "fixed_split_previously_examined_in_session": true
+}

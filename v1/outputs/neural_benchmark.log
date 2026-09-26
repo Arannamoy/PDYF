@@ -1,0 +1,77 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/Projects/FYDP/src/fydp/benchmark_neural.py", line 209, in <module>
+    run()
+    ~~~^^
+  File "/root/Projects/FYDP/src/fydp/benchmark_neural.py", line 140, in run
+    model, best_epoch, stop_ap = fit_one(
+                                 ~~~~~~~^
+        model, a, y[inner_idx], b, y[stop_idx], device,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        seed=100 + fi, max_epochs=40, patience=8)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Projects/FYDP/src/fydp/benchmark_neural.py", line 61, in fit_one
+    loss.backward()
+    ~~~~~~~~~~~~~^^
+  File "/tmp/fydp-venv/lib/python3.14/site-packages/torch/_tensor.py", line 631, in backward
+    torch.autograd.backward(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, gradient, retain_graph, create_graph, inputs=inputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tmp/fydp-venv/lib/python3.14/site-packages/torch/autograd/__init__.py", line 381, in backward
+    _engine_run_backward(
+    ~~~~~~~~~~~~~~~~~~~~^
+        tensors,
+        ^^^^^^^^
+    ...<5 lines>...
+        accumulate_grad=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tmp/fydp-venv/lib/python3.14/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 11.63 GiB of which 51.50 MiB is free. Process 41648 has 10.82 GiB memory in use. Including non-PyTorch memory, this process has 754.00 MiB memory in use. Of the allocated memory 595.74 MiB is allocated by PyTorch, and 10.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+neural benchmark device=cuda NVIDIA GeForce RTX 3060
+
+mlp_spectral18
+  fold 1: stop_ap=0.9559 epoch=9 held_subj=6
+  fold 2: stop_ap=0.4319 epoch=14 held_subj=5
+  fold 3: stop_ap=0.9767 epoch=14 held_subj=5
+  fold 4: stop_ap=0.3012 epoch=15 held_subj=5
+  fold 5: stop_ap=0.4268 epoch=21 held_subj=5
+  OOF pooled=0.8098 subject_macro=0.4385
+
+mlp_spectral_plus_stats
+  fold 1: stop_ap=0.9565 epoch=5 held_subj=6
+  fold 2: stop_ap=0.4407 epoch=20 held_subj=5
+  fold 3: stop_ap=0.9543 epoch=3 held_subj=5
+  fold 4: stop_ap=0.4195 epoch=14 held_subj=5
+  fold 5: stop_ap=0.3959 epoch=20 held_subj=5
+  OOF pooled=0.7167 subject_macro=0.4319
+
+mlp_all
+  fold 1: stop_ap=0.9621 epoch=8 held_subj=6
+  fold 2: stop_ap=0.4288 epoch=28 held_subj=5
+  fold 3: stop_ap=0.9482 epoch=11 held_subj=5
+  fold 4: stop_ap=0.3226 epoch=19 held_subj=5
+  fold 5: stop_ap=0.4018 epoch=20 held_subj=5
+  OOF pooled=0.7220 subject_macro=0.4459
+
+tcn_w32
+  fold 1: stop_ap=0.8578 epoch=3 held_subj=6
+  fold 2: stop_ap=0.3475 epoch=4 held_subj=5
+  fold 3: stop_ap=0.9143 epoch=2 held_subj=5
+  fold 4: stop_ap=0.4240 epoch=8 held_subj=5
+  fold 5: stop_ap=0.3640 epoch=2 held_subj=5
+  OOF pooled=0.5226 subject_macro=0.4081
+
+tcn_w64
+  fold 1: stop_ap=0.9220 epoch=21 held_subj=6

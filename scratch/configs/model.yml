@@ -1,0 +1,8 @@
+name: patchtst
+n_channels: 6
+patch: 16
+d_model: 64
+nhead: 4
+layers: 2
+n_class: 2
+dropout: 0.1

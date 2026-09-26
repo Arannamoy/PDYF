@@ -1,0 +1,6 @@
+batch_size: 32
+epochs: 25
+lr: 0.001
+num_workers: 0
+out_dir: outputs
+ckpt_name: patchtst_imu.pt

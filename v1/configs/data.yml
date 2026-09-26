@@ -1,0 +1,14 @@
+data_dir: dataset/imu_data/IMU    
+sampling_frequency: 128
+observation_windows: 5.0
+forecast_horizon: 2.0
+window_stride: 1.0
+fog_frac: 0.30
+seed: 42
+test_size: 0.25
+val_size: 0.20
+rebalance_val: true
+val_min_mid: 3
+mid_lo: 0.05
+mid_hi: 0.95
+drop_extreme_train: false

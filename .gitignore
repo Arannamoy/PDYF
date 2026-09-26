@@ -2,3 +2,4 @@
 .venv
 *.csv
 /dataset
+*.mp4

@@ -1,0 +1,23 @@
+.
+├── dataset
+│   ├── imu_data
+│   ├── uzip
+│   ├── video_data
+│   └── zip
+├── dataset.dvc
+├── Document from Arannamoy Mondal.pdf
+├── exp.ipynb
+├── notebooks
+│   ├── 001_eda.ipynb
+│   └── 002_model.ipynb
+├── pyproject.toml
+├── Readme.md
+├── README.md
+├── scripts
+├── src
+│   └── fydp
+├── tree.txt
+├── uv.lock
+└── Video_IMU_FOG_Project_Analysis.pdf
+
+10 directories, 11 files

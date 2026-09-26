@@ -1,0 +1,706 @@
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/xgboost/core.py:569: UserWarning: [02:09:50] WARNING: /__w/xgboost/xgboost/src/common/error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+Potential solutions:
+- Use a data structure that matches the device ordinal in the booster.
+- Set the device for booster before call to inplace_predict.
+
+This warning will only be shown once.
+
+  return func(**kwargs)
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/tmp/fydp-venv/lib/python3.14/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Default metric period is 5 because PRAUC is/are not implemented for GPU
+Metric PRAUC:type=Classic is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+windows=8094 pool=5814 held-out subjects=[np.str_('SUB09'), np.str_('SUB13'), np.str_('SUB14'), np.str_('SUB16'), np.str_('SUB20'), np.str_('SUB22'), np.str_('SUB25'), np.str_('SUB27'), np.str_('SUB30')]
+GPU=True device=NVIDIA GeForce RTX 3060
+
+FEATURES spectral18: 18 dims
+  logreg_c0.03                 pooled=0.8482 subject_macro=0.4490
+  logreg_c0.1                  pooled=0.8476 subject_macro=0.4461
+  logreg_c0.3                  pooled=0.8467 subject_macro=0.4455
+  logreg_c1.0                  pooled=0.8448 subject_macro=0.4433
+  logreg_c3.0                  pooled=0.8433 subject_macro=0.4421
+  rbf_svc_c0.1                 pooled=0.7603 subject_macro=0.4369
+  rbf_svc_c1.0                 pooled=0.7526 subject_macro=0.4408
+  rbf_svc_c10.0                pooled=0.7353 subject_macro=0.4344
+  knn5                         pooled=0.7167 subject_macro=0.4050
+  knn15                        pooled=0.7729 subject_macro=0.4257
+  knn31                        pooled=0.7962 subject_macro=0.4216
+  extra_trees_l2               pooled=0.8305 subject_macro=0.4509
+  random_forest_l2             pooled=0.8232 subject_macro=0.4470
+  extra_trees_l5               pooled=0.8329 subject_macro=0.4498
+  random_forest_l5             pooled=0.8251 subject_macro=0.4531
+  extra_trees_l10              pooled=0.8434 subject_macro=0.4485
+  random_forest_l10            pooled=0.8379 subject_macro=0.4529
+  hist_gb_l10_lr0.05           pooled=0.8321 subject_macro=0.4355
+  hist_gb_l20_lr0.05           pooled=0.8208 subject_macro=0.4341
+  hist_gb_l20_lr0.1            pooled=0.8003 subject_macro=0.4281
+  lda_shrinkage                pooled=0.8337 subject_macro=0.4349
+  gnb                          pooled=0.7488 subject_macro=0.4397
+  xgboost_d2_r5                pooled=0.8227 subject_macro=0.4394
+  xgboost_d3_r10               pooled=0.8019 subject_macro=0.4414
+  xgboost_d4_r10               pooled=0.7920 subject_macro=0.4451
+  catboost_d4_l25              pooled=0.7998 subject_macro=0.4570
+  catboost_d6_l210             pooled=0.7949 subject_macro=0.4533
+  catboost_d8_l220             pooled=0.7929 subject_macro=0.4525
+
+FEATURES spectral_rich: 54 dims
+  logreg_c0.03                 pooled=0.8013 subject_macro=0.4263
+  logreg_c0.1                  pooled=0.7890 subject_macro=0.4255
+  logreg_c0.3                  pooled=0.7835 subject_macro=0.4253
+  logreg_c1.0                  pooled=0.7809 subject_macro=0.4264
+  logreg_c3.0                  pooled=0.7793 subject_macro=0.4259
+  rbf_svc_c0.1                 pooled=0.7440 subject_macro=0.4304
+  rbf_svc_c1.0                 pooled=0.7528 subject_macro=0.4325
+  rbf_svc_c10.0                pooled=0.7431 subject_macro=0.4221
+  knn5                         pooled=0.7002 subject_macro=0.3978
+  knn15                        pooled=0.7689 subject_macro=0.4231
+  knn31                        pooled=0.7951 subject_macro=0.4233
+  extra_trees_l2               pooled=0.8419 subject_macro=0.4441
+  random_forest_l2             pooled=0.8318 subject_macro=0.4359
+  extra_trees_l5               pooled=0.8393 subject_macro=0.4447
+  random_forest_l5             pooled=0.8437 subject_macro=0.4446
+  extra_trees_l10              pooled=0.8463 subject_macro=0.4455
+  random_forest_l10            pooled=0.8392 subject_macro=0.4486
+  hist_gb_l10_lr0.05           pooled=0.8297 subject_macro=0.4279
+  hist_gb_l20_lr0.05           pooled=0.8276 subject_macro=0.4334
+  hist_gb_l20_lr0.1            pooled=0.8239 subject_macro=0.4297
+  lda_shrinkage                pooled=0.8027 subject_macro=0.4231
+  gnb                          pooled=0.7529 subject_macro=0.4299
+  xgboost_d2_r5                pooled=0.8282 subject_macro=0.4414
+  xgboost_d3_r10               pooled=0.8264 subject_macro=0.4397
+  xgboost_d4_r10               pooled=0.8239 subject_macro=0.4386
+  catboost_d4_l25              pooled=0.8398 subject_macro=0.4294
+  catboost_d6_l210             pooled=0.8379 subject_macro=0.4262
+  catboost_d8_l220             pooled=0.8271 subject_macro=0.4394
+
+FEATURES spectral_magnitude: 16 dims
+  logreg_c0.03                 pooled=0.8556 subject_macro=0.4323
+  logreg_c0.1                  pooled=0.8530 subject_macro=0.4333
+  logreg_c0.3                  pooled=0.8502 subject_macro=0.4325
+  logreg_c1.0                  pooled=0.8480 subject_macro=0.4319
+  logreg_c3.0                  pooled=0.8472 subject_macro=0.4322
+  rbf_svc_c0.1                 pooled=0.7190 subject_macro=0.4166
+  rbf_svc_c1.0                 pooled=0.7243 subject_macro=0.4231
+  rbf_svc_c10.0                pooled=0.6734 subject_macro=0.4113
+  knn5                         pooled=0.6861 subject_macro=0.3778
+  knn15                        pooled=0.7771 subject_macro=0.4080
+  knn31                        pooled=0.8035 subject_macro=0.4334
+  extra_trees_l2               pooled=0.7846 subject_macro=0.4274
+  random_forest_l2             pooled=0.7684 subject_macro=0.4270
+  extra_trees_l5               pooled=0.8013 subject_macro=0.4319
+  random_forest_l5             pooled=0.7847 subject_macro=0.4338
+  extra_trees_l10              pooled=0.8134 subject_macro=0.4309
+  random_forest_l10            pooled=0.7939 subject_macro=0.4354
+  hist_gb_l10_lr0.05           pooled=0.7993 subject_macro=0.4543
+  hist_gb_l20_lr0.05           pooled=0.7976 subject_macro=0.4491
+  hist_gb_l20_lr0.1            pooled=0.7920 subject_macro=0.4419
+  lda_shrinkage                pooled=0.8359 subject_macro=0.4306
+  gnb                          pooled=0.8154 subject_macro=0.4199
+  xgboost_d2_r5                pooled=0.8077 subject_macro=0.4556
+  xgboost_d3_r10               pooled=0.7777 subject_macro=0.4439
+  xgboost_d4_r10               pooled=0.7790 subject_macro=0.4389
+  catboost_d4_l25              pooled=0.8116 subject_macro=0.4365
+  catboost_d6_l210             pooled=0.7978 subject_macro=0.4299
+  catboost_d8_l220             pooled=0.7928 subject_macro=0.4302
+
+FEATURES time_stats: 88 dims
+  logreg_c0.03                 pooled=0.8330 subject_macro=0.4439
+  logreg_c0.1                  pooled=0.7969 subject_macro=0.4370
+  logreg_c0.3                  pooled=0.7645 subject_macro=0.4365
+  logreg_c1.0                  pooled=0.7386 subject_macro=0.4397
+  logreg_c3.0                  pooled=0.7224 subject_macro=0.4390
+  rbf_svc_c0.1                 pooled=0.8313 subject_macro=0.4471
+  rbf_svc_c1.0                 pooled=0.8429 subject_macro=0.4579
+  rbf_svc_c10.0                pooled=0.8518 subject_macro=0.4721
+  knn5                         pooled=0.7353 subject_macro=0.4078
+  knn15                        pooled=0.7898 subject_macro=0.4144
+  knn31                        pooled=0.8022 subject_macro=0.4314
+  extra_trees_l2               pooled=0.8564 subject_macro=0.4583
+  random_forest_l2             pooled=0.8572 subject_macro=0.4547
+  extra_trees_l5               pooled=0.8608 subject_macro=0.4601
+  random_forest_l5             pooled=0.8656 subject_macro=0.4685
+  extra_trees_l10              pooled=0.8682 subject_macro=0.4633
+  random_forest_l10            pooled=0.8674 subject_macro=0.4731
+  hist_gb_l10_lr0.05           pooled=0.8836 subject_macro=0.4446
+  hist_gb_l20_lr0.05           pooled=0.8787 subject_macro=0.4533
+  hist_gb_l20_lr0.1            pooled=0.8740 subject_macro=0.4549
+  lda_shrinkage                pooled=0.7435 subject_macro=0.4432
+  gnb                          pooled=0.4596 subject_macro=0.3837
+  xgboost_d2_r5                pooled=0.8846 subject_macro=0.4694
+  xgboost_d3_r10               pooled=0.8827 subject_macro=0.4724
+  xgboost_d4_r10               pooled=0.8848 subject_macro=0.4708
+  catboost_d4_l25              pooled=0.8808 subject_macro=0.4866
+  catboost_d6_l210             pooled=0.8855 subject_macro=0.4880
+  catboost_d8_l220             pooled=0.8791 subject_macro=0.4765
+
+FEATURES spectral_plus_stats: 158 dims
+  logreg_c0.03                 pooled=0.8270 subject_macro=0.4288
+  logreg_c0.1                  pooled=0.8124 subject_macro=0.4213
+  logreg_c0.3                  pooled=0.7992 subject_macro=0.4193
+  logreg_c1.0                  pooled=0.7804 subject_macro=0.4202
+  logreg_c3.0                  pooled=0.7633 subject_macro=0.4213
+  rbf_svc_c0.1                 pooled=0.7783 subject_macro=0.4241
+  rbf_svc_c1.0                 pooled=0.7875 subject_macro=0.4358
+  rbf_svc_c10.0                pooled=0.7602 subject_macro=0.4224
+  knn5                         pooled=0.7385 subject_macro=0.3918
+  knn15                        pooled=0.7784 subject_macro=0.3992
+  knn31                        pooled=0.7855 subject_macro=0.4063
+  extra_trees_l2               pooled=0.8420 subject_macro=0.4575
+  random_forest_l2             pooled=0.8457 subject_macro=0.4664
+  extra_trees_l5               pooled=0.8481 subject_macro=0.4566
+  random_forest_l5             pooled=0.8491 subject_macro=0.4635
+  extra_trees_l10              pooled=0.8535 subject_macro=0.4540
+  random_forest_l10            pooled=0.8555 subject_macro=0.4727
+  hist_gb_l10_lr0.05           pooled=0.8715 subject_macro=0.4586
+  hist_gb_l20_lr0.05           pooled=0.8692 subject_macro=0.4485
+  hist_gb_l20_lr0.1            pooled=0.8558 subject_macro=0.4473
+  lda_shrinkage                pooled=0.7903 subject_macro=0.4153
+  gnb                          pooled=0.5323 subject_macro=0.3886
+  xgboost_d2_r5                pooled=0.8592 subject_macro=0.4619
+  xgboost_d3_r10               pooled=0.8371 subject_macro=0.4647
+  xgboost_d4_r10               pooled=0.8407 subject_macro=0.4668
+  catboost_d4_l25              pooled=0.8427 subject_macro=0.4618
+  catboost_d6_l210             pooled=0.8465 subject_macro=0.4496
+  catboost_d8_l220             pooled=0.8499 subject_macro=0.4530
+
+FEATURES temporal_chunks: 114 dims
+  logreg_c0.03                 pooled=0.8145 subject_macro=0.4420
+  logreg_c0.1                  pooled=0.8057 subject_macro=0.4411
+  logreg_c0.3                  pooled=0.7998 subject_macro=0.4420
+  logreg_c1.0                  pooled=0.7951 subject_macro=0.4424
+  logreg_c3.0                  pooled=0.7922 subject_macro=0.4393
+  rbf_svc_c0.1                 pooled=0.7756 subject_macro=0.4369
+  rbf_svc_c1.0                 pooled=0.7929 subject_macro=0.4488
+  rbf_svc_c10.0                pooled=0.7966 subject_macro=0.4379
+  knn5                         pooled=0.7256 subject_macro=0.4212
+  knn15                        pooled=0.7794 subject_macro=0.4264
+  knn31                        pooled=0.7923 subject_macro=0.4253
+  extra_trees_l2               pooled=0.8358 subject_macro=0.4622
+  random_forest_l2             pooled=0.8526 subject_macro=0.4704
+  extra_trees_l5               pooled=0.8398 subject_macro=0.4622
+  random_forest_l5             pooled=0.8563 subject_macro=0.4719
+  extra_trees_l10              pooled=0.8453 subject_macro=0.4652
+  random_forest_l10            pooled=0.8612 subject_macro=0.4720
+  hist_gb_l10_lr0.05           pooled=0.8512 subject_macro=0.4558
+  hist_gb_l20_lr0.05           pooled=0.8504 subject_macro=0.4567
+  hist_gb_l20_lr0.1            pooled=0.8455 subject_macro=0.4554
+  lda_shrinkage                pooled=0.8034 subject_macro=0.4423
+  gnb                          pooled=0.6710 subject_macro=0.4110
+  xgboost_d2_r5                pooled=0.8492 subject_macro=0.4876
+  xgboost_d3_r10               pooled=0.8516 subject_macro=0.4815
+  xgboost_d4_r10               pooled=0.8534 subject_macro=0.4788
+  catboost_d4_l25              pooled=0.8548 subject_macro=0.4656
+  catboost_d6_l210             pooled=0.8532 subject_macro=0.4794
+  catboost_d8_l220             pooled=0.8466 subject_macro=0.4770
+
+FEATURES all: 218 dims
+  logreg_c0.03                 pooled=0.8352 subject_macro=0.4365
+  logreg_c0.1                  pooled=0.8236 subject_macro=0.4302
+  logreg_c0.3                  pooled=0.8130 subject_macro=0.4264
+  logreg_c1.0                  pooled=0.7977 subject_macro=0.4253
+  logreg_c3.0                  pooled=0.7828 subject_macro=0.4287
+  rbf_svc_c0.1                 pooled=0.7978 subject_macro=0.4224
+  rbf_svc_c1.0                 pooled=0.8136 subject_macro=0.4390
+  rbf_svc_c10.0                pooled=0.7962 subject_macro=0.4352
+  knn5                         pooled=0.7544 subject_macro=0.4145
+  knn15                        pooled=0.7812 subject_macro=0.4090
+  knn31                        pooled=0.7912 subject_macro=0.4128
+  extra_trees_l2               pooled=0.8475 subject_macro=0.4643
+  random_forest_l2             pooled=0.8481 subject_macro=0.4828
+  extra_trees_l5               pooled=0.8546 subject_macro=0.4603
+  random_forest_l5             pooled=0.8584 subject_macro=0.4687
+  extra_trees_l10              pooled=0.8604 subject_macro=0.4621
+  random_forest_l10            pooled=0.8621 subject_macro=0.4695
+  hist_gb_l10_lr0.05           pooled=0.8836 subject_macro=0.4716
+  hist_gb_l20_lr0.05           pooled=0.8770 subject_macro=0.4711
+  hist_gb_l20_lr0.1            pooled=0.8733 subject_macro=0.4721
+  lda_shrinkage                pooled=0.8004 subject_macro=0.4243
+  gnb                          pooled=0.5048 subject_macro=0.3823
+  xgboost_d2_r5                pooled=0.8683 subject_macro=0.4951
+  xgboost_d3_r10               pooled=0.8593 subject_macro=0.4906
+  xgboost_d4_r10               pooled=0.8610 subject_macro=0.4786
+  catboost_d4_l25              pooled=0.8632 subject_macro=0.4808
+  catboost_d6_l210             pooled=0.8709 subject_macro=0.4840
+  catboost_d8_l220             pooled=0.8615 subject_macro=0.4910
+
+TOP CV CANDIDATES
+            feature              model  cv_auprc  cv_subject_macro_auprc  cv_subjects_with_both_classes
+         time_stats   catboost_d6_l210  0.885506                0.487974                             20
+         time_stats     xgboost_d4_r10  0.884813                0.470774                             20
+         time_stats      xgboost_d2_r5  0.884630                0.469394                             20
+         time_stats hist_gb_l10_lr0.05  0.883645                0.444600                             20
+                all hist_gb_l10_lr0.05  0.883552                0.471641                             20
+         time_stats     xgboost_d3_r10  0.882663                0.472376                             20
+         time_stats    catboost_d4_l25  0.880812                0.486572                             20
+         time_stats   catboost_d8_l220  0.879137                0.476498                             20
+         time_stats hist_gb_l20_lr0.05  0.878718                0.453329                             20
+                all hist_gb_l20_lr0.05  0.877025                0.471148                             20
+         time_stats  hist_gb_l20_lr0.1  0.874009                0.454867                             20
+                all  hist_gb_l20_lr0.1  0.873270                0.472072                             20
+spectral_plus_stats hist_gb_l10_lr0.05  0.871466                0.458617                             20
+                all   catboost_d6_l210  0.870855                0.484028                             20
+spectral_plus_stats hist_gb_l20_lr0.05  0.869186                0.448482                             20
+                all      xgboost_d2_r5  0.868262                0.495110                             20
+         time_stats    extra_trees_l10  0.868235                0.463323                             20
+         time_stats  random_forest_l10  0.867388                0.473120                             20
+         time_stats   random_forest_l5  0.865630                0.468470                             20
+                all    catboost_d4_l25  0.863223                0.480832                             20
+rank blend top-2: pooled=0.8875 subject_macro=0.4887
+rank blend top-3: pooled=0.8885 subject_macro=0.4865
+rank blend top-4: pooled=0.8890 subject_macro=0.4735
+rank blend top-5: pooled=0.8947 subject_macro=0.4770
+rank blend top-6: pooled=0.8934 subject_macro=0.4752
+
+FINAL HELD-OUT TEST (one evaluation after CV selection)
+{
+  "winner_by_grouped_cv": {
+    "feature": "time_stats",
+    "model": "catboost_d6_l210",
+    "cv_auprc": 0.8855064870750148,
+    "cv_subject_macro_auprc": 0.48797407315074937,
+    "cv_subjects_with_both_classes": 20
+  },
+  "test_auprc": 0.5533451327793686,
+  "test_positive_rate": 0.16578947368421051,
+  "test_subjects": [
+    "SUB09",
+    "SUB13",
+    "SUB14",
+    "SUB16",
+    "SUB20",
+    "SUB22",
+    "SUB25",
+    "SUB27",
+    "SUB30"
+  ],
+  "test_per_subject_auprc": {
+    "SUB09": 0.24166675457925013,
+    "SUB13": null,
+    "SUB14": 0.39917135171159346,
+    "SUB16": 0.556453199654171,
+    "SUB20": 0.037586612961395365,
+    "SUB22": null,
+    "SUB25": null,
+    "SUB27": 0.7980761693154894,
+    "SUB30": 0.8054537677187277
+  },
+  "test_evaluated_once_after_cv_selection": true
+}

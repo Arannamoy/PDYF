@@ -1,0 +1,8 @@
+data_dir: dataset/imu_data/IMU    
+sampling_frequency: 128
+observation_windows: 5.0
+forecast_horizon: 2.0
+window_stride: 1.0
+fog_frac: 0.30
+train_frac: 0.6
+val_frac: 0.2

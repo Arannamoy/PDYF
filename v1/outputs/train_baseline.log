@@ -1,0 +1,23 @@
+windows=(8094, 640, 6) fog_rate=0.2067 subjects=35
+count     35.000000
+mean     231.257143
+std       97.698318
+min      114.000000
+25%      114.000000
+50%      228.000000
+75%      342.000000
+max      342.000000
+split sizes: train=4104 val=1710 test=2280
+test subjects: ['SUB09', 'SUB13', 'SUB14', 'SUB16', 'SUB20', 'SUB22', 'SUB25', 'SUB27', 'SUB30']
+device=cpu
+train class counts=[3239.0, 865.0] weight=[0.6335288882255554, 2.3722543716430664]
+ep 01 train_loss=0.4898 val_nll=0.3343 val_f1=0.8589 val_auprc=0.6958
+ep 02 train_loss=0.3581 val_nll=0.1890 val_f1=0.9114 val_auprc=0.9466
+ep 03 train_loss=0.3332 val_nll=0.1944 val_f1=0.9438 val_auprc=0.9545
+ep 04 train_loss=0.2665 val_nll=0.1047 val_f1=0.9533 val_auprc=0.9804
+ep 05 train_loss=0.2494 val_nll=0.1849 val_f1=0.9218 val_auprc=0.9732
+ep 06 train_loss=0.1959 val_nll=0.1588 val_f1=0.9309 val_auprc=0.9810
+ep 07 train_loss=0.1762 val_nll=0.0804 val_f1=0.9654 val_auprc=0.9840
+ep 08 train_loss=0.1408 val_nll=0.2932 val_f1=0.9051 val_auprc=0.9471
+ep 09 train_loss=0.1330 val_nll=0.1064 val_f1=0.9617 val_auprc=0.9803
+ep 10 train_loss=0.1173 val_nll=0.1307 val_f1=0.9574 val_auprc=0.9713

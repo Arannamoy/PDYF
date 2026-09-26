@@ -1,0 +1,157 @@
+neural benchmark device=cuda NVIDIA GeForce RTX 3060
+
+mlp_spectral18
+  fold 1: stop_ap=0.9675 epoch=11 held_subj=6
+  fold 2: stop_ap=0.4955 epoch=22 held_subj=5
+  fold 3: stop_ap=0.9756 epoch=17 held_subj=5
+  fold 4: stop_ap=0.3205 epoch=30 held_subj=5
+  fold 5: stop_ap=0.3938 epoch=12 held_subj=5
+  OOF pooled=0.7496 subject_macro=0.4554
+
+mlp_spectral_plus_stats
+  fold 1: stop_ap=0.9639 epoch=8 held_subj=6
+  fold 2: stop_ap=0.4103 epoch=13 held_subj=5
+  fold 3: stop_ap=0.9637 epoch=14 held_subj=5
+  fold 4: stop_ap=0.3488 epoch=22 held_subj=5
+  fold 5: stop_ap=0.2942 epoch=2 held_subj=5
+  OOF pooled=0.6687 subject_macro=0.4232
+
+mlp_all
+  fold 1: stop_ap=0.9671 epoch=5 held_subj=6
+  fold 2: stop_ap=0.4498 epoch=30 held_subj=5
+  fold 3: stop_ap=0.9434 epoch=5 held_subj=5
+  fold 4: stop_ap=0.3230 epoch=9 held_subj=5
+  fold 5: stop_ap=0.3861 epoch=16 held_subj=5
+  OOF pooled=0.7223 subject_macro=0.4321
+
+tcn_w32
+  fold 1: stop_ap=0.8967 epoch=7 held_subj=6
+  fold 2: stop_ap=0.3388 epoch=4 held_subj=5
+  fold 3: stop_ap=0.9203 epoch=1 held_subj=5
+  fold 4: stop_ap=0.3406 epoch=5 held_subj=5
+  fold 5: stop_ap=0.3094 epoch=1 held_subj=5
+  OOF pooled=0.5769 subject_macro=0.4054
+
+tcn_w64
+  fold 1: stop_ap=0.9084 epoch=7 held_subj=6
+  fold 2: stop_ap=0.3279 epoch=2 held_subj=5
+  fold 3: stop_ap=0.9378 epoch=1 held_subj=5
+  fold 4: stop_ap=0.4864 epoch=6 held_subj=5
+  fold 5: stop_ap=0.2278 epoch=5 held_subj=5
+  OOF pooled=0.5931 subject_macro=0.4247
+
+CV results:
+ [
+  {
+    "model": "mlp_spectral18",
+    "feature": "spectral18",
+    "cv_auprc": 0.749550044801758,
+    "cv_subject_macro_auprc": 0.45538587608165376,
+    "cv_subjects_with_both_classes": 20,
+    "fold_epochs": [
+      11,
+      22,
+      17,
+      30,
+      12
+    ]
+  },
+  {
+    "model": "mlp_all",
+    "feature": "all",
+    "cv_auprc": 0.7223355212393595,
+    "cv_subject_macro_auprc": 0.4321301296462396,
+    "cv_subjects_with_both_classes": 20,
+    "fold_epochs": [
+      5,
+      30,
+      5,
+      9,
+      16
+    ]
+  },
+  {
+    "model": "mlp_spectral_plus_stats",
+    "feature": "spectral_plus_stats",
+    "cv_auprc": 0.66870766894556,
+    "cv_subject_macro_auprc": 0.4231913217737506,
+    "cv_subjects_with_both_classes": 20,
+    "fold_epochs": [
+      8,
+      13,
+      14,
+      22,
+      2
+    ]
+  },
+  {
+    "model": "tcn_w64",
+    "feature": "raw",
+    "cv_auprc": 0.5931416033530527,
+    "cv_subject_macro_auprc": 0.42465185107938996,
+    "cv_subjects_with_both_classes": 20,
+    "fold_epochs": [
+      7,
+      2,
+      1,
+      6,
+      5
+    ]
+  },
+  {
+    "model": "tcn_w32",
+    "feature": "raw",
+    "cv_auprc": 0.5769197835079581,
+    "cv_subject_macro_auprc": 0.4054373560894091,
+    "cv_subjects_with_both_classes": 20,
+    "fold_epochs": [
+      7,
+      4,
+      1,
+      5,
+      1
+    ]
+  }
+]
+
+FINAL {
+  "winner_by_nested_group_cv": {
+    "model": "mlp_spectral18",
+    "feature": "spectral18",
+    "cv_auprc": 0.749550044801758,
+    "cv_subject_macro_auprc": 0.45538587608165376,
+    "cv_subjects_with_both_classes": 20,
+    "fold_epochs": [
+      11,
+      22,
+      17,
+      30,
+      12
+    ]
+  },
+  "test_auprc": 0.5255473933405861,
+  "test_per_subject_auprc": {
+    "SUB09": 0.24602600239422148,
+    "SUB13": null,
+    "SUB14": 0.40095127544868736,
+    "SUB16": 0.5483862189472817,
+    "SUB20": 0.03724025816357794,
+    "SUB22": null,
+    "SUB25": null,
+    "SUB27": 0.796338459980807,
+    "SUB30": 0.6996342221694575
+  },
+  "test_subjects": [
+    "SUB09",
+    "SUB13",
+    "SUB14",
+    "SUB16",
+    "SUB20",
+    "SUB22",
+    "SUB25",
+    "SUB27",
+    "SUB30"
+  ],
+  "device": "cuda",
+  "final_epochs": 17
+}
